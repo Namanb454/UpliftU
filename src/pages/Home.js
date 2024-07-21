@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 const Home = () => {
     return (
         <ParallaxProvider >
-            <Layout title={'Upliftu-Home'}>
+            <div>
                 <div className='relative overflow-hidden bg-white p-[5vh] '>
                     <Navbar />
                     <Parallax
@@ -76,7 +76,7 @@ const Home = () => {
 
 
                 </div>
-            </Layout>
+            </div>
         </ ParallaxProvider >
 
     )

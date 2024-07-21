@@ -37,10 +37,10 @@ const Navbar = () => {
                     <nav className="scroll-smooth flex lg:py-[2vh] py-2 md:space-x-10 px-[5vw] font-semibold shadow-black shadow-sm">
                         <div className="flex-1 w-fit md:h-auto h-[5vh]">
                             <div className="text-indigo-500">
-                                <Link to='/' className='flex w-fit' aria-label="Home">
+                                <a href='/' className='flex w-fit' aria-label="Home">
                                     {/* <img className="lg:w-[5vw] w-[15vw] items-center" src="sitescriptwhitelogo.png" alt="Logo" /> */}
                                     <h2 className='lg:text-[2vw] md:text-[2vw] text-[5vw] '>Uplift-U</h2>
-                                </Link>
+                                </a>
 
                             </div>
                         </div>
