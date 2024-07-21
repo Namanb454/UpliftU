@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <ParallaxProvider >
             <div>
-                <div className='relative overflow-hidden bg-white p-[5vh] '>
+                <div className='relative overflow-hidden bg-white p-5 '>
                     <Navbar />
                     <Parallax
                         className='-z-1 absolute lg:w-[60%] w-[100%] left-[60%] lg:top-[30%] top-[40%]'
