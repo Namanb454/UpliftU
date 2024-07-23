@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import Navbar from '../components/Navbar'
+import Process from '../components/Process'
+import { motion } from 'framer-motion'
 
 const Home = () => {
     const services = [
@@ -29,8 +31,8 @@ const Home = () => {
     return (
         <ParallaxProvider >
             <div>
-                <div className='relative overflow-hidden bg-white p-5 '>
-                    <Navbar />
+                <Navbar />
+                <div className='relative overflow-hidden bg-white p-5 text-balance'>
                     <Parallax
                         className='-z-1 absolute lg:w-[60%] w-[100%] left-[60%] lg:top-[30%] top-[40%]'
                         translateX={['0', '-100%']}
@@ -38,7 +40,6 @@ const Home = () => {
                         scale={['0', '3']}
                     >
                         <img className='' src='images/Saly-43.png' alt='Images'
-                        // data-scroll data-scroll-speed='1'
                         />
                     </Parallax>
                     {/* Banner */}
@@ -96,43 +97,69 @@ const Home = () => {
 
 
                 {/* Services  */}
-                <div className='bg-black w-full font-[quench] py-24'>
-                    <h2 className='text-white text-center p-5 lg:text-[5vw] text-[8vw] bowlby-one-regular'>
+                <div className='bg-black w-full font-[quench] py-24 px-5'>
+                    <h2 className='text-white text-center p-5 lg:text-6xl text-4xl bowlby-one-regular'>
                         Services
                     </h2>
-                    <div className='lg:flex gap-5 mx-auto w-fit p-5 lg:space-y-0 space-y-5'>
+                    <div className='lg:flex gap-5 mx-auto w-fit lg:space-y-0 space-y-5'>
                         {services.map((data, index) => {
                             return (
-                                <div class={`lg:w-[25%] rounded-3xl lg:h-full p-3 flex flex-col gap-1 
+                                <motion.div
+                                    initial={{ scale: 0, }}
+                                    whileInView={{ scale: 1 }}
+                                    transition={{ duration: 0.2, delay: index*0.3 }}
+                                    class={`lg:w-[25%] rounded-3xl lg:h-full p-3 flex flex-col gap-1 
                                     ${index === 0 && 'bg-red-300'}
                                     ${index === 1 && 'bg-lime-300'}
                                     ${index === 2 && 'bg-blue-300'}
                                     ${index === 3 && 'bg-amber-300'}
                                 `}>
                                     {/* <div class="duration-500 contrast-50 h-48 bg-gradient-to-bl from-black via-orange-900 to-indigo-600  hover:contrast-100"></div> */}
-                                    <div class="flex flex-col gap-4">
-                                        <div class=" justify-between h-[70vh]">
-                                            <div class="space-y-2 text-justify">
+                                    <div
+                                        class="flex flex-col gap-4">
+                                        <div class=" justify-between lg:h-[70vh] h-[30vh]">
+                                            <div class="space-y-2 text-balance">
                                                 <div class="lg:text-[3vw] text-[6vw] h-[10vw] font-bold text-black">{data.title}</div>
                                                 {/* <p class="text- text-indigo-800">{data.desc}</p> */}
-                                                <p class=" text-neutral-800 font-mono text-[1.3vw]">{data.desc2}</p>
+                                                <p class=" text-neutral-600 lg:text-[1.3vw]">{data.desc2}</p>
                                             </div>
                                         </div>
                                         <button class="py-3 px-4 items-center gap-x-2 text-base rounded-full shadow-md shadow-black border border-transparent bg-indigo-500 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none">Book Now</button>
                                     </div>
-                                </div>
+                                </motion.div>
                             )
                         })}
 
                     </div>
-                    <h2 className='text-white text-[3vw] text-center'>
+                    <h2 className='text-white lg:text-[3vw] text-[6vw] text-center'>
                         UpliftU is uplifting the businesses to the stratosphere!
                     </h2>
-                    <h2 className='text-white text-[1.3vw] text-center font-mono'>
+                    <h2 className='text-white lg:text-[1.3vw] text-center m-5'>
                         Join the UpliftU Revolution, Make a change. Support the cause! Experience Beyond the marketing for engagement
                     </h2>
 
                 </div>
+
+
+
+                <Process />
+
+
+
+                <div className='overflow-hidden h-screen'>
+
+                    <Parallax
+                        scale={['0', '100']}
+                        speed={['10']}
+                        slowerScrollRate={true}
+                    >
+                        <div className='w-40 h-40 bg-black rounded-full my-20 mx-auto'>
+
+                        </div>
+                    </Parallax>
+                </div>
+
+
             </div>
         </ ParallaxProvider >
 
