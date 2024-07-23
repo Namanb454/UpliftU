@@ -151,7 +151,7 @@ const Navbar = () => {
                         initial={{ y: -500 }}
                         whileInView={{ y: 0 }}
                         transition={{ duration: 0.2 }}
-                        className='absolute z-10 top-0 w-full bg-indigo-500/80 backdrop-blur-sm' ref={menuRef}>
+                        className='absolute z-10 top-0 w-full bg-indigo-500/80 backdrop-blur-sm ' ref={menuRef}>
                         {isOpen &&
                             <div className='scroll-smooth lg:py-[2vh] py-2 border border-neutral-800 md:space-x-10 px-[5vw] font-semibold shadow-black shadow-sm'>
                                 <motion.svg

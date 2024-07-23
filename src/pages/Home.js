@@ -4,6 +4,28 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import Navbar from '../components/Navbar'
 
 const Home = () => {
+    const services = [
+        {
+            'title': 'UpliftU Guide',
+            'desc': 'Need direct guidance on your social media marketing team efforts?',
+            'desc2': 'A specialised social media manager will guide your in-house team/agency where we’ll focus on creating more engaging and interactive content that is relatable to audiences that provide you with strategic direction on where to take your socials and amplify your brands message.'
+        },
+        {
+            'title': 'UpliftU Management',
+            'desc': 'Struggling with organic reach and engagement? Leave it to us',
+            'desc2': 'Maintaining open comms with you, we strategize, plan, and execute social media content deep dive into your brand and take management of your social channels off your hands – finally'
+        },
+        {
+            'title': 'UpliftU Odyssey',
+            'desc': 'Need to save time and money for your social media content completely at one place?',
+            'desc2': 'The ever-changing algorithm is our everyday companion.We plan, we record we act and we manage all you content creation module for your social handle.Everything at one place'
+        },
+        {
+            'title': 'Consultation',
+            'desc': 'An hour of planning to save you hours of doing.',
+            'desc2': 'A one-on-one consultation designed to give you strategic guidance on your organic social media marketing efforts'
+        },
+    ]
     return (
         <ParallaxProvider >
             <div>
@@ -21,11 +43,11 @@ const Home = () => {
                     </Parallax>
                     {/* Banner */}
                     <div className=" z-10 w-full">
-                        <div className="border-2 border-black rounded-xl shadow-inner shadow-amber-400 lg:max-w-[] w-full mx-auto sm:px- lg:px-8 py-10 lg:py-16">
-                            <div className="lg:max-w-6xl text-center mx-auto">
+                        <div className="border-2 border-black rounded-xl shadow-inner shadow-amber-400 lg:max-w-5xl w-full mx-auto sm:px- lg:px-8 py-10 lg:py-16">
+                            <div className="lg:max-w-5xl text-center mx-auto">
                                 {/* Title */}
-                                <div className="lg:max-w-6xl">
-                                    <h1 className="bowlby-one-regular block text-black text-[10vw] md:text-5xl lg:text-8xl">
+                                <div className="lg:max-w-5xl">
+                                    <h1 className="bowlby-one-regular block text-black text-[10vw] md:text-5xl lg:text-7xl">
                                         India’s <span className='bg-gradient-to-l from-fuchsia-500 to-rose-500 bg-clip-text text-transparent'>First Social Media</span> Engagement Driven Company!
                                     </h1>
                                 </div>
@@ -68,12 +90,47 @@ const Home = () => {
                         </div>
                         {/* End Grid */}
                     </div>
+                    {/* Horizontal Tabs */}
+                </div>
 
 
-{/* Horizontal Tabs */}
 
+                {/* Services  */}
+                <div className='bg-black w-full font-[quench] py-24'>
+                    <h2 className='text-white text-center p-5 lg:text-[5vw] text-[8vw] bowlby-one-regular'>
+                        Services
+                    </h2>
+                    <div className='lg:flex gap-5 mx-auto w-fit p-5 lg:space-y-0 space-y-5'>
+                        {services.map((data, index) => {
+                            return (
+                                <div class={`lg:w-[25%] rounded-3xl lg:h-full p-3 flex flex-col gap-1 
+                                    ${index === 0 && 'bg-red-300'}
+                                    ${index === 1 && 'bg-lime-300'}
+                                    ${index === 2 && 'bg-blue-300'}
+                                    ${index === 3 && 'bg-amber-300'}
+                                `}>
+                                    {/* <div class="duration-500 contrast-50 h-48 bg-gradient-to-bl from-black via-orange-900 to-indigo-600  hover:contrast-100"></div> */}
+                                    <div class="flex flex-col gap-4">
+                                        <div class=" justify-between h-[70vh]">
+                                            <div class="space-y-2 text-justify">
+                                                <div class="lg:text-[3vw] text-[6vw] h-[10vw] font-bold text-black">{data.title}</div>
+                                                {/* <p class="text- text-indigo-800">{data.desc}</p> */}
+                                                <p class=" text-neutral-800 font-mono text-[1.3vw]">{data.desc2}</p>
+                                            </div>
+                                        </div>
+                                        <button class="py-3 px-4 items-center gap-x-2 text-base rounded-full shadow-md shadow-black border border-transparent bg-indigo-500 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none">Book Now</button>
+                                    </div>
+                                </div>
+                            )
+                        })}
 
-
+                    </div>
+                    <h2 className='text-white text-[3vw] text-center'>
+                        UpliftU is uplifting the businesses to the stratosphere!
+                    </h2>
+                    <h2 className='text-white text-[1.3vw] text-center font-mono'>
+                        Join the UpliftU Revolution, Make a change. Support the cause! Experience Beyond the marketing for engagement
+                    </h2>
 
                 </div>
             </div>
