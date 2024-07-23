@@ -30,26 +30,23 @@ const Home = () => {
     ]
     return (
         <ParallaxProvider >
-            <div>
-                <Navbar />
-                <div className='relative overflow-hidden bg-white p-5 text-balance'>
-                    <Parallax
-                        className='-z-1 absolute lg:w-[60%] w-[100%] left-[60%] lg:top-[30%] top-[40%]'
-                        translateX={['0', '-100%']}
-                        translateY={['0', '-100%']}
-                        scale={['0', '3']}
-                    >
-                        <img className='' src='images/Saly-43.png' alt='Images'
-                        />
-                    </Parallax>
+            <div className=''>
+                <div className='relative overflow-hidden p-5 text-balance font-[quench]'>
+
+                    <Navbar />
+                    
                     {/* Banner */}
-                    <div className=" z-10 w-full">
-                        <div className="border-2 border-black rounded-xl shadow-inner shadow-amber-400 lg:max-w-5xl w-full mx-auto sm:px- lg:px-8 py-10 lg:py-16">
+                    <div className=" z-10 w-full ">
+
+                        <div class="overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
+                        </div>
+
+                        <div className="backdrop-blur- rounded-xl shadow-inner w-full mx-auto sm:px- lg:px-8 py-10 lg:py-16">
                             <div className="lg:max-w-5xl text-center mx-auto">
                                 {/* Title */}
                                 <div className="lg:max-w-5xl">
                                     <h1 className="bowlby-one-regular block text-black text-[10vw] md:text-5xl lg:text-7xl">
-                                        India’s <span className='bg-gradient-to-l from-fuchsia-500 to-rose-500 bg-clip-text text-transparent'>First Social Media</span> Engagement Driven Company!
+                                        India’s <span className='bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent'>First Social Media</span> Engagement Driven Company!
                                     </h1>
                                 </div>
                                 {/* End Title */}
@@ -70,22 +67,22 @@ const Home = () => {
                     </div>
 
 
-                    <div className="z-10 relative text-center h-screen max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                    <div className="z-10 relative text-center max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                         {/* Grid */}
                         <div className="grid gap-6 grid-cols-1 sm:gap-12 lg:grid-cols-3 lg:gap-8">
                             <div>
                                 <h4 className="text-lg sm:text-xl font-semibold text-black ">Accuracy rate</h4>
-                                <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo-500">99.95%</p>
+                                <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo-500 font-sans">99.95%</p>
                                 <p className="mt-1 text-black ">in fulfilling orders</p>
                             </div>
                             <div>
                                 <h4 className="text-lg sm:text-xl font-semibold text-black ">Startup businesses</h4>
-                                <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo-500">2,000+</p>
+                                <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo-500 font-sans">2,000+</p>
                                 <p className="mt-1 text-black">partner with UpliftU</p>
                             </div>
                             <div>
                                 <h4 className="text-lg sm:text-xl font-semibold text-black ">Happy customer</h4>
-                                <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo-500">85%</p>
+                                <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-indigo-500 font-sans">85%</p>
                                 <p className="mt-1 text-black">this year alone</p>
                             </div>
                         </div>
@@ -97,7 +94,7 @@ const Home = () => {
 
 
                 {/* Services  */}
-                <div className='bg-black w-full font-[quench] py-24 px-5'>
+                <div className='bg-neutral-950 w-full font-[quench] py-24 px-5'>
                     <h2 className='text-white text-center p-5 lg:text-6xl text-4xl bowlby-one-regular'>
                         Services
                     </h2>
@@ -107,7 +104,7 @@ const Home = () => {
                                 <motion.div
                                     initial={{ scale: 0, }}
                                     whileInView={{ scale: 1 }}
-                                    transition={{ duration: 0.2, delay: index*0.3 }}
+                                    transition={{ duration: 0.2, delay: index * 0.3 }}
                                     class={`lg:w-[25%] rounded-3xl lg:h-full p-3 flex flex-col gap-1 
                                     ${index === 0 && 'bg-red-300'}
                                     ${index === 1 && 'bg-lime-300'}
@@ -146,14 +143,14 @@ const Home = () => {
 
 
 
-                <div className='overflow-hidden h-screen'>
+                <div className='overflow-hidden h- py-24'>
 
                     <Parallax
                         scale={['0', '100']}
                         speed={['10']}
                         slowerScrollRate={true}
                     >
-                        <div className='w-40 h-40 bg-black rounded-full my-20 mx-auto'>
+                        <div className='w-40 h-40 bg-black rounded-full my-40 mx-auto'>
 
                         </div>
                     </Parallax>

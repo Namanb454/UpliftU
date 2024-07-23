@@ -44,27 +44,7 @@ const Navbar = () => {
 
                             </div>
                         </div>
-                        {/* <div className=" lg:flex md:space-x-10 text-base items-center">
-                            {navbar.map((data, index) => {
-                                return (
-                                    <motion.div
-                                        initial={{ scale: 0, opacity: 0, x: 100, y: -100 }}
-                                        animate={{ scale: 1, opacity: 1, x: 0, y: 0 }}
-                                        transition={{ delay: index * 0.1, duration: 0.2 }}
-
-
-                                        className={`lg:text-[1.3vw] md:text-[0.1vw] items-end hover:text-indigo-500 transition-all duration-150 ease-in-out rounded-full border-indigo-500 hover:tracking-widest scroll-smooth hover:scroll-auto p-3 text-white
-                                ${index === 3 && 'border-2 px-5 text-indigo-500'}
-                                `}>
-                                        <a href={data.link}>
-                                            {data.nav}
-                                        </a>
-                                    </motion.div>
-                                )
-                            })}
-                        </div> */}
-
-                        {/* Mobile Responsive */}
+                       
                         <div className="items-center justify-end w-fit">
                             <button onClick={() => setIsOpen(!isOpen)} className={`w-fit p-2 rounded-md focus:outline-none`}>
                                 {isOpen ?
@@ -97,53 +77,6 @@ const Navbar = () => {
 
 
 
-                            {/* <motion.div
-                                initial={{ x: 300 }}
-                                whileInView={{ x: 100 }}
-                                transition={{ duration: 0.3 }}
-                                className={isOpen ? " bg-black rounded-xl" : "hidden"}>
-                                <div
-                                    className={`${isOpen ? ' block ' : 'hidden'
-                                        }  transition-all w-full px-2`}
-                                    id="mobile-Homeu"
-                                    ref={menuRef}
-                                >
-                                    <motion.div
-                                        variants={{
-                                            open: {
-                                                clipPath: "inset(0% 0% 0% 0% round 10px)",
-                                                transition: {
-                                                    type: "spring",
-                                                    bounce: 0,
-                                                    duration: 0.7,
-                                                    delayChildren: 0.3,
-                                                    staggerChildren: 0.05
-                                                }
-                                            },
-                                        }}
-                                        style={{ pointerEvents: isOpen ? "auto" : "auto" }}
-                                        className="py-[5vh] pb-3 space-y-[10vh] h-screen sm:px-3 transition-all ease-in-out duration-1000 z-20" ref={menuRef}>
-
-                                        {navbar.map((data, index) => {
-                                            return (
-                                                <motion.a key={data.id}
-                                                    href={data.link}
-                                                    onClick={() => setIsOpen(false)}
-                                                    ref={menuRef}
-                                                    initial={{ x: 100, opacity: 0, scale: 0 }}
-                                                    whileInView={{ y: 0, x: 0, opacity: 1, scale: 1 }}
-                                                    transition={{ duration: 0.2, delay: 0.1 * index, easi: [0.33, 1, 0.68, 1] }}
-                                                    className={` text-white hover:text-indigo-500 text-left hover:tracking-widest scroll-smooth hover:scroll-auto transition-all block px-3 p-2 w-fit font-[]
-                                            ${index === 3 && 'border-2 px-5 border-indigo-500 text-indigo-500'}
-                                            `}
-                                                >
-                                                    {data.nav}
-                                                </motion.a>
-                                            )
-                                        })}
-                                    </motion.div>
-                                </div>
-                            </motion.div> */}
                         </div>
 
                     </nav>

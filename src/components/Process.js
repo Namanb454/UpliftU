@@ -6,9 +6,11 @@ const Process = () => {
         <ParallaxProvider>
             <div>
                 <section>
-                    <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl font-[quench] overflow-hidden">
+                    <div className=" px-8 py-24 mx-auto font-[quench] overflow-hidden"
+                    >
+
                         <div>
-                            <h1 className="bowlby-one-regular text-4xl text-black lg:text-6xl text-balance">
+                            <h1 className="bowlby-one-regular lg:text-6xl text-4xl text-black  text-balance">
                                 Here the proecess
                                 <span className="text-indigo-500">&nbsp;how we will work with you</span>
                             </h1>
@@ -94,60 +96,128 @@ const Process = () => {
                                     </Parallax>
                                 </div>
                             </div>
-                            <div className="grid gap-2 mt-2 text-center md:grid-cols-3">
 
+                        </div>
+
+
+
+                        <section>
+                            <div className="relative py-24 w-full">
+                                <p className=" font-semibold text-center text-gray-500 uppercase">
+                                    Trusted by the world’s most innovative teams
+                                </p>
+                                   
                                 <Parallax
-                                    // scale={['1', '0']}
-                                    // translateY={['100', '0']}
-                                // opacity={['1', '0']}
-                                >
-                                    <div className="p-2 overflow-hidden rounded-3xl">
-                                        <img src="/images/vision.jpg" alt="#_" className="object-cover h-[20vh] mx-auto rounded-2xl" />
+                                translateX={['20', '-50']}
+                                 className="absolute w-full flex mt-12">
+                                    <div className=" flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
                                     </div>
-                                    <div className="mt-4">
-                                        <p className="font-medium text-gray-900">Your vision</p>
-                                        {/* <p className="mt-2 text-sm text-gray-500">
-                                        The license comes with no warranties. The licensor provides the
-                                        work "as is," and users must use it at their own risk.
-                                    </p> */}
+                                    <div className=" flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+
                                     </div>
                                 </Parallax>
-
+                               
+                                
                                 <Parallax
-                                    // scale={['1', '0']}
-                                    // translateY={['100', '0']}
-                                // opacity={['1', '0']}
-                                >
-                                    <div className="p-2 overflow-hidden rounded-3xl">
-                                        <img src="/images/strategy.jpg" alt="#_" className="object-cover h-[20vh] mx-auto rounded-2xl" />
+                                translateX={['-50', '20']}
+                                 className="absolute w-full flex mt-36">
+                                    <div className=" flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
                                     </div>
-                                    <div className="px-8 mt-4">
-                                        <p className="font-medium text-gray-900">Our strategy
-                                        </p>
-                                        {/* <p className="mt-2 text-sm text-gray-500">
-                                        You can adapt, remix, transform, and build upon the licensed work.
-                                    </p> */}
+                                    <div className=" flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
                                     </div>
-                                </Parallax>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
 
-                                <Parallax
-                                    // scale={['1', '0']}
-                                    // translateY={['100', '0']}
-                                // opacity={['1', '0']}
-                                >
-                                    <div className="p-2 overflow-hidden rounded-3xl">
-                                        <img src="/images/achieve.jpg" alt="#_" className="object-cover h-[20vh] mx-auto rounded-2xl" />
                                     </div>
-                                    <div className="px-8 mt-4">
-                                        <p className="font-medium text-gray-900">Build Legacy</p>
-                                        {/* <p className="mt-2 text-sm text-gray-500">
-                                        You are allowed to use the licensed work for both non-commercial
-                                        and commercial purposes.
-                                    </p> */}
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+
+                                    </div>
+                                    <div className="flex justify-center col-span-1 px-8">
+                                        {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
+                                        <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+
                                     </div>
                                 </Parallax>
                             </div>
-                        </div>
+                        </section>
+
+
+
                     </div>
                 </section>
             </div>
