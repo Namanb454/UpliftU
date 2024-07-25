@@ -1,7 +1,18 @@
 import React from 'react'
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
+import { Parallax, ParallaxProvider, useParallax } from 'react-scroll-parallax'
 
 const Process = () => {
+    const parallax = useParallax({
+        onProgressChange: (progress) => {
+            if (parallax.ref.current) {
+                // set progress to CSS variable
+                parallax.ref.current.style.setProperty(
+                    "--progress",
+                    progress.toString()
+                );
+            }
+        },
+    });
     return (
         <ParallaxProvider>
             <div>
@@ -10,7 +21,7 @@ const Process = () => {
                     >
 
                         <div>
-                            <h1 className="bowlby-one-regular lg:text-6xl text-4xl text-black  text-balance">
+                            <h1 ref={parallax.ref} className="text-stroke bowlby-one-regular lg:text-6xl text-4xl text-black  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
                                 Here the proecess
                                 <span className="bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;how we will work with you</span>
                             </h1>
@@ -24,7 +35,7 @@ const Process = () => {
                             <div className=" gap-2 lg:flex-row-reverse lg:max-w-7xl lg:mx-auto lg:flex">
                                 <div className="lg:w-[70%]">
                                     <Parallax
-                                        // translateX={['0', '0']}
+                                    // translateX={['0', '0']}
 
                                     >
                                         <div className="relative [h]- p-2 overflow-hidden rounded-3xl">
@@ -38,7 +49,7 @@ const Process = () => {
 
                                         className="flex h-full">
                                         <div className="flex flex-col justify-center p-8 border bg-black rounded-3xl max-w-none">
-                                            <h2 className="text-[2vw] font-medium text-indigo-400">
+                                            <h2 className="lg:text-[2vw] text-[5vw] font-medium text-indigo-400">
                                                 Step I
                                             </h2>
                                             <p className="mt-4 font-medium text-white/90 text-pretty">
@@ -53,7 +64,7 @@ const Process = () => {
 
                                 <div className="lg:w-[70%]">
                                     <Parallax
-                                        // translateX={['-20', '10']}
+                                    // translateX={['-20', '10']}
 
                                     >
                                         <div className="relative h-[full] p-2 overflow-hidden  rounded-3xl">
@@ -67,7 +78,7 @@ const Process = () => {
 
                                         className="flex h-full">
                                         <div className="flex flex-col justify-center p-8 border bg-black rounded-3xl max-w-none">
-                                            <h2 className="text-[2vw] font-medium text-lime-400">Step II</h2>
+                                            <h2 className="lg:text-[2vw] text-[5vw] font-medium text-lime-400">Step II</h2>
                                             <p className="mt-4 font-medium text-white/90 text-pretty">
                                                 You will sign an agreement and submit initial payment to lock in the work.
                                             </p>
@@ -79,7 +90,7 @@ const Process = () => {
 
                                 <div className="lg:w-[70%]">
                                     <Parallax
-                                        // translateX={['-20', '10']}
+                                    // translateX={['-20', '10']}
                                     >
                                         <div className="relative h-[full] p-2 overflow-hidden rounded-3xl">
                                             <img src="/images/working.jpg" className="object-contain mx-auto lg:h-[50vh] lg:w-[40vw] border shadow-2xl rounded-2xl" />
@@ -91,7 +102,7 @@ const Process = () => {
                                         // translateX={['20', '-10']}
                                         className="flex h-full">
                                         <div className="flex flex-col justify-center p-8 border bg-black rounded-3xl max-w-none">
-                                            <h2 className="text-[2vw] font-medium text-red-400">
+                                            <h2 className="lg:text-[2vw] text-[5vw] font-medium text-red-400">
                                                 Step III
                                             </h2>
                                             <p className="mt-4 font-medium text-white/90 text-pretty">
@@ -108,7 +119,7 @@ const Process = () => {
 
                         <section>
                             <div className="relative py-24 w-full">
-                                <p className=" font-semibold text-center text-gray-500 uppercase">
+                                <p className=" font-semibold text-center text-indigo-800 uppercase">
                                     Trusted by the world’s most innovative teams
                                 </p>
 

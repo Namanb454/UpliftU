@@ -5,12 +5,13 @@ import Navbar from '../components/Navbar'
 import Process from '../components/Process'
 import { motion } from 'framer-motion'
 import Services from '../components/Services'
+import Testimonials from '../components/Testimonials'
 
 const Home = () => {
 
     return (
         <ParallaxProvider >
-            <div className=''>
+            <div className='font-[quench]'>
                 <div className='relative overflow-hidden p-5 text-balance font-[quench]'>
 
                     <Navbar />
@@ -82,19 +83,93 @@ const Home = () => {
 
 
 
-                <div className='overflow-hidden h- py-24'>
+                {/* <div className='overflow-hidden h- py-24'>
 
                     <Parallax
-                        scale={['0', '100']}
-                        speed={['10']}
-                        slowerScrollRate={true}
+                        scale={['0', '20']}
+                        className='-z-1'
                     >
-                        <div className='w-40 h-40 bg-black rounded-full my-40 mx-auto'>
+                        <div className=' w-40 h-40 bg-black rounded-full my-40 mx-auto'></div>
+                    </Parallax>
+                </div> */}
 
+                <Parallax
+                    opacity={['0', '3']}
+                    className='relative lg:p-24 p-5 mx-auto font-[quench] overflow-hidden'>
+                    <Parallax
+                        scale={['0', '4']}
+                        translateX={['-100', '100']}
+                        scaleZ={['0', '1']}
+                        // translateY={['100', '-100']}
+
+                        className='bg-neutral-900 rounded-trfull absolute w-screen h-screen left-0 -z-10 overflow-hidden'>
+
+                    </Parallax>
+                    <Parallax
+                        opacity={['0', '3']}
+                        className="mx-auto max-w-7xl text-balance">
+                        <h1 className="bowlby-one-regular pb-10 z-10 block text-white text-[10vw] md:text-5xl lg:text-7xl">
+                            Difficulties Faced On
+                            <span className="bg-gradient-to-l z-10 from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;Social Media</span>
+                        </h1>
+                        <div className=" grid lg:space-x-10 grid-cols-1 lg:grid-cols-2">
+                            <div className="md:order-first ">
+                                <dl className="grid grid-cols-2 gap-4 list-none lg:gap-6 text-pretty lg:mt-0 mt-5">
+                                    <div className='bg-amber-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
+                                        <div className='text-white'>❖</div>
+                                        <dt className="mt-4 font-medium text-black ">
+                                            Large followings with
+                                            low engagement
+
+                                            (likes, comments)
+
+                                            = wasted potential.
+
+                                            <span className='font-sans font-semibold'>&nbsp;25</span>k followers but only
+                                            <span className='font-sans font-semibold'>&nbsp;100</span> likes
+                                        </dt>
+
+                                    </div>
+                                    <div className='bg-blue-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
+                                        <div className='text-white'>❖</div>
+                                        <dt className="mt-4 font-medium text-black">
+                                            In-house teams lack
+                                            the creativity to
+                                            produce engaging
+                                            videos.                                        </dt>
+
+                                    </div>
+                                    <div className='bg-lime-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
+                                        <div className='text-white'>❖</div>
+                                        <dt className="mt-4 font-medium text-black">Wasting money on
+                                            boosting reels that
+                                            hurt your reach
+                                            (algorithm!).</dt>
+
+                                    </div>
+                                    <div className='bg-red-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
+                                        <div className='text-white'>❖</div>
+                                        <dt className="mt-4 font-medium text-black">
+                                            Relying solely on
+                                            posts that don't spark
+                                            conversation or
+                                            action.
+                                        </dt>
+
+                                    </div>
+                                </dl>
+                            </div>
+                            <div className="order-first block mt-12 aspect-square lg:mt-0 items-center">
+                                <div className="p-2 overflow-hidden shadow-lg items-center rounded-3xl">
+                                    <img alt="#_" className="relative w-fit rounded-2xl drop-shadow-2xl " src="/images/section.gif" />
+                                </div>
+                            </div>
                         </div>
                     </Parallax>
-                </div>
+                </Parallax>
 
+
+                <Testimonials />
 
             </div>
         </ ParallaxProvider >

@@ -16,3 +16,13 @@
   }
 
 
+
+.text-stroke {
+  /* font-family: sans-serif; */
+  /* font-size: 30vmin; */
+  /* height: 100px; */
+  /* -webkit-text-stroke-color: aquamarine; */
+  /* text-stroke-color: aquamarine; */
+  -webkit-text-stroke-width: 1px;
+  texs-stroke-align: inside;
+}
