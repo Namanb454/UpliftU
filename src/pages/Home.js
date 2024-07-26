@@ -6,6 +6,7 @@ import Process from '../components/Process'
 import { motion } from 'framer-motion'
 import Services from '../components/Services'
 import Testimonials from '../components/Testimonials'
+import Contact from '../components/Contact'
 
 const Home = () => {
 
@@ -170,6 +171,8 @@ const Home = () => {
 
 
                 <Testimonials />
+
+                <Contact />
 
             </div>
         </ ParallaxProvider >
