@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import Services from '../components/Services'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
+import OurResults from '../components/OurResults'
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
                         <div class="overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
                         </div>
 
-                        <div className="backdrop-blur- rounded-xl shadow-inner w-full mx-auto sm:px- lg:px-8 py-10 lg:py-16">
+                        <div className="backdrop-blur- rounded-xl shadow-inner w-full mx-auto sm:px- lg:px-8 py-10 lg:py-24">
                             <div className="lg:max-w-5xl text-center mx-auto">
                                 {/* Title */}
                                 <div className="lg:max-w-5xl">
@@ -96,7 +97,7 @@ const Home = () => {
 
                 <Parallax
                     opacity={['0', '3']}
-                    className='relative lg:p-24 p-5 mx-auto font-[quench] overflow-hidden'>
+                    className='relative lg:px-24 py-24 px-5 mx-auto font-[quench] overflow-hidden'>
                     <Parallax
                         scale={['0', '4']}
                         translateX={['-100', '100']}
@@ -109,7 +110,7 @@ const Home = () => {
                     <Parallax
                         opacity={['0', '3']}
                         className="mx-auto max-w-7xl text-balance">
-                        <h1 className="bowlby-one-regular pb-10 z-10 block text-white text-[10vw] md:text-5xl lg:text-7xl">
+                        <h1 className="bowlby-one-regular pb-10 z-10 block text-neutral-200 text-[10vw] md:text-5xl lg:text-7xl">
                             Difficulties Faced On
                             <span className="bg-gradient-to-l z-10 from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;Social Media</span>
                         </h1>
@@ -168,7 +169,6 @@ const Home = () => {
                         </div>
                     </Parallax>
                 </Parallax>
-
 
                 <Testimonials />
 

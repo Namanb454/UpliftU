@@ -24,7 +24,7 @@ const Navbar = () => {
     const navbar = [
         { 'id': '1', 'nav': 'About Us', 'link': '/about' },
         { 'id': '2', 'nav': 'Services', 'link': '/services' },
-        { 'id': '3', 'nav': 'Our Work', 'link': '/portfolio' },
+        { 'id': '3', 'nav': 'Our Work', 'link': '/our-work' },
         { 'id': '4', 'nav': "Let's Talk", 'link': '/contact' },
     ];
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <div className='font-[quench] overflow-hidden '>
                     <nav className="scroll-smooth flex lg:py-[2vh] py-2 md:space-x-10 px-[5vw] font-semibold shadow-black shadow-sm">
                         <div className="flex-1 w-fit md:h-auto h-[5vh]">
-                            <div className="text-indigo-500">
+                            <div className="text-indigo-400 bg-black py-2 px-3 w-fit rounded-md">
                                 <a href='/' className='flex w-fit' aria-label="Home">
                                     {/* <img className="lg:w-[5vw] w-[15vw] items-center" src="sitescriptwhitelogo.png" alt="Logo" /> */}
                                     <h2 className='lg:text-[2vw] md:text-[2vw] text-[5vw] '>Uplift-U</h2>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
                             </div>
                         </div>
-                       
+
                         <div className="items-center justify-end w-fit">
                             <button onClick={() => setIsOpen(!isOpen)} className={`w-fit p-2 rounded-md focus:outline-none`}>
                                 {isOpen ?

@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="max-w-5xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
                     {/* Title */}
                     <div className="max-w-3xl mb-10 lg:mb-14">
-                        <h2 className="bowlby-one-regular text-white text-[10vw] md:text-5xl lg:text-7xl">Contact us</h2>
+                        <h2 className="bowlby-one-regular text-amber-400 text-[10vw] md:text-5xl lg:text-7xl">Contact us</h2>
                         <p className="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
                     </div>
                     {/* End Title */}

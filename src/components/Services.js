@@ -57,7 +57,7 @@ const Services = () => {
                                             </div>
 
                                             <div className="text-balance h-[20vh]">
-                                                <p className="mt-2 text-sm text-white">
+                                                <p className="mt-2 text-sm text-neutral-200">
                                                     {data.desc2}
                                                 </p>
 
@@ -77,10 +77,10 @@ const Services = () => {
                 </section>
 
 
-                <h2 className='text-white lg:text-[3vw] text-[6vw] text-center'>
+                <h2 className='text-neutral-200 lg:text-[3vw] text-[6vw] text-center'>
                     UpliftU is uplifting the businesses to the stratosphere!
                 </h2>
-                <h2 className='text-white lg:text-[1.3vw] text-center m-5'>
+                <h2 className='text-neutral-200 lg:text-[1.3vw] text-center m-5'>
                     Join the UpliftU Revolution, Make a change. Support the cause! Experience Beyond the marketing for engagement
                 </h2>
             </div>

@@ -52,7 +52,7 @@ const Process = () => {
                                             <h2 className="lg:text-[2vw] text-[5vw] font-medium text-indigo-400">
                                                 Step I
                                             </h2>
-                                            <p className="mt-4 font-medium text-white/90 text-pretty">
+                                            <p className="mt-4 font-medium text-neutral-200 text-pretty">
                                                 We chat & confirm what you want to achieve and the services that will get you there – whether it be individual services, packaging it up or something more custom.
                                             </p>
                                         </div>
@@ -79,7 +79,7 @@ const Process = () => {
                                         className="flex h-full">
                                         <div className="flex flex-col justify-center p-8 border bg-black rounded-3xl max-w-none">
                                             <h2 className="lg:text-[2vw] text-[5vw] font-medium text-lime-400">Step II</h2>
-                                            <p className="mt-4 font-medium text-white/90 text-pretty">
+                                            <p className="mt-4 font-medium text-neutral-200 text-pretty">
                                                 You will sign an agreement and submit initial payment to lock in the work.
                                             </p>
                                         </div>
@@ -105,7 +105,7 @@ const Process = () => {
                                             <h2 className="lg:text-[2vw] text-[5vw] font-medium text-red-400">
                                                 Step III
                                             </h2>
-                                            <p className="mt-4 font-medium text-white/90 text-pretty">
+                                            <p className="mt-4 font-medium text-neutral-200 text-pretty">
                                                 Once legalities are sorted we get the ball rolling!
                                             </p>
                                         </div>

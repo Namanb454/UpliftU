@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Service from './pages/Service';
+import OurWork from './pages/OurWork';
 function App() {
   
 const locomotiveScroll = new LocomotiveScroll();
@@ -18,6 +19,7 @@ const locomotiveScroll = new LocomotiveScroll();
       <div className=''>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/our-work" element={<OurWork />} />
           {/* <Route exact path="/about" element={<About />} /> */}
           {/* <Route exact path="/contact" element={<Contact />} /> */}
           {/* <Route exact path="/services" element={<Service />} /> */}
