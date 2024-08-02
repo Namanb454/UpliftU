@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Luckiest+Guy&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* <style> */
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Luckiest+Guy&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+/* </style> */
 .luckiest {
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
@@ -16,6 +19,54 @@
   }
 
 
+  .merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 
 .text-stroke {
   /* font-family: sans-serif; */

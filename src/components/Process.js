@@ -21,7 +21,7 @@ const Process = () => {
                     >
 
                         <div>
-                            <h1 ref={parallax.ref} className="text-stroke bowlby-one-regular lg:text-6xl text-4xl text-black  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
+                            <h1 ref={parallax.ref} className="text-stroke font-[genica] lg:text-6xl text-4xl text-black  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
                                 Here the proecess
                                 <span className="bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;how we will work with you</span>
                             </h1>
@@ -119,7 +119,7 @@ const Process = () => {
 
                         <section>
                             <div className="relative py-24 w-full">
-                                <p className=" font-semibold text-center text-indigo-800 uppercase">
+                                <p className=" font-semibold text-center text-indigo-600 uppercase">
                                     Trusted by the world’s most innovative teams
                                 </p>
 

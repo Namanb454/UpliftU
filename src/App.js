@@ -19,7 +19,7 @@ const locomotiveScroll = new LocomotiveScroll();
       <div className=''>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/our-work" element={<OurWork />} />
+          {/* <Route exact path="/our-work" element={<OurWork />} /> */}
           {/* <Route exact path="/about" element={<About />} /> */}
           {/* <Route exact path="/contact" element={<Contact />} /> */}
           {/* <Route exact path="/services" element={<Service />} /> */}

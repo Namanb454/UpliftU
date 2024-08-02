@@ -70,41 +70,7 @@ const OurWork = () => {
 
     return (
         <div>
-            <div className='relative overflow-hidden p-5 text-balance font-[quench]'>
-
-                <Navbar />
-
-                {/* Banner */}
-                <div className="z-10 w-full ">
-
-                    <div class="overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
-                    </div>
-
-                    <div className="backdrop-blur- rounded-xl shadow-inner w-full mx-auto sm:px- lg:px-8 py-10 lg:py-24">
-                        <div className="lg:max-w-5xl text-center mx-auto">
-                            {/* Title */}
-                            <div className="lg:max-w-5xl">
-                                <h1 className="bowlby-one-regular block text-black text-[10vw] md:text-5xl lg:text-7xl">
-                                    UpliftU’s <span className='bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent'>Client
-                                        Success</span>Results
-                                </h1>
-                            </div>
-                            {/* End Title */}
-                            {/* <div className="mt-5 max-w-6xl">
-                <p className=" font-semibold text-lg text-black/50">100% guaranteed audience interactions</p>
-            </div> */}
-                            {/* Buttons */}
-                            <div className="mt-8 gap-3 flex justify-center">
-                                <a className="py-3 px-4 inline-flex items-center gap-x-2 text-base font-bold border-r-4 border-b-4 border-indigo-500 bg-black text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none" href="#contact">
-                                    Get started now
-                                    <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
-                                </a>
-                            </div>
-                            {/* End Buttons */}
-
-                        </div>
-                    </div>
-                </div>
+            <div className='relative overflow-hidden p-5 text-balance font-sans font-semibold'>
 
 
 
@@ -117,22 +83,22 @@ const OurWork = () => {
                 </div> */}
 
 
-                {work.map((data, index) => {
-                    return (
+                <section>
+                    <div className="px-8 py-24 mx-auto md:px-12 lg:px-12 max-w-7xl">
+                        {work.map((data, index) => {
+                            return (
 
 
-                        <section>
-                            <div className="px-8 py-24 mx-auto md:px-12 lg:px-12 max-w-7xl">
-                                <div className="grid items-center grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
+                                <div className="grid my-12 items-center grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
                                     <div className="md:order-first">
-                                        <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 text-balance">
+                                        <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 text-balance font-[quench]">
                                             {data.client}
                                             {/* <span className="text-gray-600">wherever and anywhere</span> */}
                                         </h1>
                                         <dl className="grid grid-cols- gap-4 mt-12 list-none lg:gap-1">
                                             <div>
-                                                <div>❖</div>
-                                                <dt className="mt-4 font-medium text-gray-900">
+                                                <div className='text-indigo-600'>❖</div>
+                                                <dt className="mt-4 font-bold">
                                                     Client Overview
                                                 </dt>
                                                 <dd className="mt-2 text-sm text-gray-500">
@@ -140,8 +106,8 @@ const OurWork = () => {
                                                 </dd>
                                             </div>
                                             <div>
-                                                <div>❖</div>
-                                                <dt className="mt-4 font-medium text-gray-900">
+                                                <div className='text-indigo-600'>❖</div>
+                                                <dt className="mt-4 font-bold ">
                                                     Strategies Utilized
                                                 </dt>
                                                 <dd className="mt-2 text-sm text-gray-500">
@@ -158,8 +124,8 @@ const OurWork = () => {
                                                 </dd>
                                             </div>
                                             <div>
-                                                <div>❖</div>
-                                                <dt className="mt-4 font-medium text-gray-900">Growth Achieved:</dt>
+                                                <div className='text-indigo-600'>❖</div>
+                                                <dt className="mt-4 font-bold ">Growth Achieved:</dt>
                                                 <dd className="mt-2 text-sm text-gray-500">
                                                     {data.growth1}
                                                 </dd>
@@ -178,15 +144,14 @@ const OurWork = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
 
-                    )
-                })}
+                            )
+                        })}
+                    </div>
+                </section>
 
 
             </div>
-                <Contact />
         </div>
     )
 }

@@ -29,7 +29,7 @@ const Services = () => {
         <div className='bg-neutral-900 w-full font-[quench] px-5 '
         >
             <div className='backdrop-blur-sm w-full py-24'>
-                <h2 className='text-amber-300 text-center p-5 lg:text-6xl text-4xl bowlby-one-regular'>
+                <h2 className='text-amber-300 text-center p-5 lg:text-6xl text-4xl font-[genica]'>
                     Services
                 </h2>
                 <section>

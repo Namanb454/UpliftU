@@ -8,6 +8,7 @@ import Services from '../components/Services'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import OurResults from '../components/OurResults'
+import OurWork from './OurWork'
 
 const Home = () => {
 
@@ -28,7 +29,7 @@ const Home = () => {
                             <div className="lg:max-w-5xl text-center mx-auto">
                                 {/* Title */}
                                 <div className="lg:max-w-5xl">
-                                    <h1 className="bowlby-one-regular block text-black text-[10vw] md:text-5xl lg:text-7xl">
+                                    <h1 className="font-[genica] block text-black text-[12vw] md:text-5xl lg:text-8xl">
                                         India’s <span className='bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent'>First Social Media</span> Engagement Driven Company!
                                     </h1>
                                 </div>
@@ -110,7 +111,7 @@ const Home = () => {
                     <Parallax
                         opacity={['0', '3']}
                         className="mx-auto max-w-7xl text-balance">
-                        <h1 className="bowlby-one-regular pb-10 z-10 block text-neutral-200 text-[10vw] md:text-5xl lg:text-7xl">
+                        <h1 className="font-[genica] pb-10 z-10 block text-neutral-200 text-[10vw] md:text-5xl lg:text-7xl">
                             Difficulties Faced On
                             <span className="bg-gradient-to-l z-10 from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;Social Media</span>
                         </h1>
@@ -169,6 +170,8 @@ const Home = () => {
                         </div>
                     </Parallax>
                 </Parallax>
+
+                <OurWork />
 
                 <Testimonials />
 

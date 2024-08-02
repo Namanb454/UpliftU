@@ -31,7 +31,7 @@ const Testimonials = () => {
                 <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
                     <div className="flex flex-col w-full">
                         <div className="flex flex-col w-full" aria-labelledby="carousel-label" role="region" tabIndex={0}>
-                            <h2 className='text-rose-500 text-center p-5 lg:text-6xl text-4xl bowlby-one-regular'>
+                            <h2 className='text-rose-500 text-center p-5 lg:text-6xl text-4xl font-[genica]'>
                                 Our Client's Love
                             </h2>
                             <h2 className="sr-only" id="carousel-label">Carousel</h2>
