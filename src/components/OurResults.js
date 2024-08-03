@@ -35,17 +35,17 @@ const OurResults = () => {
 
     return (
         <ParallaxProvider>
-            <div>
+            <div className=''>
                 <section>
-                    <div className="lg:px-24 py-24 px-5 mx-auto font-[quench] overflow-hidden"
+                    <div className=" mx-auto font-[quench]"
                     >
 
                         <div>
-                            <h1 className="text-stroke bowlby-one-regular lg:text-6xl text-4xl text-black  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
+                            <h1 className="text-stroke bowlby-one-regular lg:text-[5vw] text-4xl text-black  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
                                 Our
                                 <span className="bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;Results</span>
                             </h1>
-                            <p className="mt-4 text-base font- text-neutral-600 text-balance">
+                            <p className="my-5 xl:text-[1.5vw] text-base font- text-neutral-600 text-balance">
                                 Control and added security. With decentralization, users have more
                                 control over their data and transactions, and the platform is less
                                 susceptible to malicious attacks.
@@ -139,12 +139,12 @@ const OurResults = () => {
 
 
                 <section className="overflowhidden">
-                    <div className="px-8 mx-auto md:px-12 lg:px-5 h-full max-w-7xl">
+                    <div className="px-8 mx-auto md:px-12 lg:px-0 h-full">
                         <div className="flex flex-col mx-auto sm:flex-row border-2 rounded-lg border-neutral-200 p-10">
                             {
                                 results.map((data, index) => {
                                     return (
-                                        <div className={`lg:h-[70vh] h-[50vh] w-[50vw] mx-auto p-2 overflow-hidden duration-500 origin-bottom border transformrelative rounded-3xl hover:rotate-0 hover:-translate-y-12 hover:scale-125
+                                        <div className={`lg:h-[70vh] h-[50vh] w-[50vw] mx-auto p-2 overflow-hidden duration-500 origin-bottom border transform relative rounded-3xl hover:rotate-0 hover:-translate-y-12 hover:scale-125
                                         `}>
                                             <img src={data.img} className="object- w-full h-full border shadow-2xl rounded-2xl" alt="#_" />
                                         </div>
@@ -157,7 +157,7 @@ const OurResults = () => {
 
 
 
-               
+
 
 
 

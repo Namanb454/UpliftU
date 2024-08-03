@@ -29,7 +29,7 @@ const Home = () => {
                             <div className="lg:max-w-5xl text-center mx-auto">
                                 {/* Title */}
                                 <div className="lg:max-w-5xl">
-                                    <h1 className="font-[genica] block text-black text-[12vw] md:text-5xl lg:text-8xl">
+                                    <h1 className="font-[genica] block text-black text-[12vw] md:text-5xl xl:text-[6vw]">
                                         India’s <span className='bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent'>First Social Media</span> Engagement Driven Company!
                                     </h1>
                                 </div>
@@ -110,8 +110,8 @@ const Home = () => {
                     </Parallax>
                     <Parallax
                         opacity={['0', '3']}
-                        className="mx-auto max-w-7xl text-balance">
-                        <h1 className="font-[genica] pb-10 z-10 block text-neutral-200 text-[10vw] md:text-5xl lg:text-7xl">
+                        className="mx-auto text-balance">
+                        <h1 className="font-[genica] pb-10 z-10 block text-neutral-200 text-[10vw] md:text-5xl lg:text-[5vw]">
                             Difficulties Faced On
                             <span className="bg-gradient-to-l z-10 from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;Social Media</span>
                         </h1>
@@ -120,7 +120,7 @@ const Home = () => {
                                 <dl className="grid grid-cols-2 gap-4 list-none lg:gap-6 text-pretty lg:mt-0 mt-5">
                                     <div className='bg-amber-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-white'>❖</div>
-                                        <dt className="mt-4 font-medium text-black ">
+                                        <dt className="mt-4 font-medium text-black  xl:text-[1.2vw]">
                                             Large followings with
                                             low engagement
 
@@ -135,7 +135,7 @@ const Home = () => {
                                     </div>
                                     <div className='bg-blue-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-white'>❖</div>
-                                        <dt className="mt-4 font-medium text-black">
+                                        <dt className="mt-4 font-medium text-black xl:text-[1.2vw]">
                                             In-house teams lack
                                             the creativity to
                                             produce engaging
@@ -144,7 +144,7 @@ const Home = () => {
                                     </div>
                                     <div className='bg-lime-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-white'>❖</div>
-                                        <dt className="mt-4 font-medium text-black">Wasting money on
+                                        <dt className="mt-4 font-medium text-black xl:text-[1.2vw]">Wasting money on
                                             boosting reels that
                                             hurt your reach
                                             (algorithm!).</dt>
@@ -152,7 +152,7 @@ const Home = () => {
                                     </div>
                                     <div className='bg-red-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-white'>❖</div>
-                                        <dt className="mt-4 font-medium text-black">
+                                        <dt className="mt-4 font-medium text-black xl:text-[1.2vw]">
                                             Relying solely on
                                             posts that don't spark
                                             conversation or

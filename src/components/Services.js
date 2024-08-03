@@ -33,7 +33,7 @@ const Services = () => {
                     Services
                 </h2>
                 <section>
-                    <div className="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
+                    <div className="px-8 py-12 mx-auto md:px-12 lg:px-32">
                         <div>
                             <h1 className="text-2xl font-semibold text-indigo-400 lg:text-5xl">
                                 Our&nbsp;
@@ -45,19 +45,19 @@ const Services = () => {
                                     return (
 
                                         <div>
-                                            <div className={` p-2 overflow-hidden border rounded-3xl lg:flex items-center
+                                            <div className={`xl:h-[60vh] p-2 overflow-hidden border rounded-3xl lg:flex items-center
                                              ${index === 0 && 'bg-red-400'}
                                                 ${index === 1 && 'bg-lime-300'}
                                                 ${index === 2 && 'bg-blue-400'}
                                                 ${index === 3 && 'bg-amber-400'}
                                                 `}>
-                                                <img src="https://wldd.in/images/img5.png" alt="#_" className="lg:ml-5 w-[15vw] h-[vh] mx-auto rounded-2xl" />
+                                                <img src="https://wldd.in/images/img5.png" alt="#_" className="xl:ml-5 w-[] xl:h-[50vh] h-[30vh] mx-auto rounded-2xl" />
                                                 <h2 className={`lg:text-[2vw] items-center text-center
                                                     `}>{data.title}</h2>
                                             </div>
 
                                             <div className="text-balance h-[20vh]">
-                                                <p className="mt-2 text-sm text-neutral-200">
+                                                <p className="mt-2 text-neutral-200">
                                                     {data.desc2}
                                                 </p>
 

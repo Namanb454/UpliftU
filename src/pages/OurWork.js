@@ -70,7 +70,7 @@ const OurWork = () => {
 
     return (
         <div>
-            <div className='relative overflow-hidden p-5 text-balance font-sans font-semibold'>
+            <div className='py-24 lg:px-24 relative overflow-hidden p-5 text-balance font-sans font-semibold'>
 
 
 
@@ -84,62 +84,63 @@ const OurWork = () => {
 
 
                 <section>
-                    <div className="px-8 py-24 mx-auto md:px-12 lg:px-12 max-w-7xl">
+                    <div className="px-8 mx-auto md:px-12 lg:px-12 max-w-7xl">
                         {work.map((data, index) => {
                             return (
 
 
                                 <div className="grid my-12 items-center grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
                                     <div className="md:order-first">
-                                        <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 text-balance font-[quench]">
+                                        <h1 className="xl:text-[4vw] text-[6vw] font-semibold tracking-tighter text-gray-900 text-balance font-[quench]">
                                             {data.client}
                                             {/* <span className="text-gray-600">wherever and anywhere</span> */}
                                         </h1>
                                         <dl className="grid grid-cols- gap-4 mt-12 list-none lg:gap-1">
                                             <div>
-                                                <div className='text-indigo-600'>❖</div>
-                                                <dt className="mt-4 font-bold">
+                                                <div className='text-indigo-600 xl:text-[1.3vw]'>❖</div>
+                                                <dt className="mt-4 font-bold xl:text-[1.3vw]">
                                                     Client Overview
                                                 </dt>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.Client_Overview}
                                                 </dd>
                                             </div>
                                             <div>
-                                                <div className='text-indigo-600'>❖</div>
-                                                <dt className="mt-4 font-bold ">
+                                                <div className='text-indigo-600 xl:text-[1.3vw]'>❖</div>
+                                                <dt className="mt-4 font-bold xl:text-[1.3vw]">
                                                     Strategies Utilized
                                                 </dt>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.strategy1}
                                                 </dd>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.strategy2}
                                                 </dd>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.strategy3}
                                                 </dd>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.strategy4}
                                                 </dd>
                                             </div>
                                             <div>
-                                                <div className='text-indigo-600'>❖</div>
-                                                <dt className="mt-4 font-bold ">Growth Achieved:</dt>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <div className='text-indigo-600 xl:text-[1.3vw]'>❖</div>
+                                                <dt className="mt-4 font-bold xl:text-[1.3vw]">
+                                                    Growth Achieved:</dt>
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.growth1}
                                                 </dd>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.growth2}
                                                 </dd>
-                                                <dd className="mt-2 text-sm text-gray-500">
+                                                <dd className="mt-2 text-gray-500">
                                                     {data.growth3}
                                                 </dd>
                                             </div>
                                         </dl>
                                     </div>
                                     <div className="order-first block w-full mt-12 lg:mt-0">
-                                        <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
+                                        <div className="h-full p-2 duration-500 hover:scale-125 border shadow-lg bg-gray-50 rounded-3xl">
                                             <img alt="#_" className="relative w-full rounded-2xl drop-shadow-2xl" src={data.img} />
                                         </div>
                                     </div>

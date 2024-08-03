@@ -21,18 +21,18 @@ const Process = () => {
                     >
 
                         <div>
-                            <h1 ref={parallax.ref} className="text-stroke font-[genica] lg:text-6xl text-4xl text-black  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
+                            <h1 ref={parallax.ref} className="text-stroke font-[genica] lg:text-[4vw] text-4xl text-black  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
                                 Here the proecess
                                 <span className="bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent">&nbsp;how we will work with you</span>
                             </h1>
-                            <p className="mt-4 text-base font- text-neutral-600 text-balance">
+                            <p className="my-10 xl:text-[1.5vw] font- text-neutral-600 text-balance">
                                 Control and added security. With decentralization, users have more
                                 control over their data and transactions, and the platform is less
                                 susceptible to malicious attacks.
                             </p>
                         </div>
                         <div className="space-y-2">
-                            <div className=" gap-2 lg:flex-row-reverse lg:max-w-7xl lg:mx-auto lg:flex">
+                            <div className=" gap-2 lg:flex-row-reverse lg:mx-auto lg:flex">
                                 <div className="lg:w-[70%]">
                                     <Parallax
                                     // translateX={['0', '0']}
@@ -52,7 +52,7 @@ const Process = () => {
                                             <h2 className="lg:text-[2vw] text-[5vw] font-medium text-indigo-400">
                                                 Step I
                                             </h2>
-                                            <p className="mt-4 font-medium text-neutral-200 text-pretty">
+                                            <p className="mt-4 xl:text-[1.3vw] font-medium text-neutral-200 text-pretty">
                                                 We chat & confirm what you want to achieve and the services that will get you there – whether it be individual services, packaging it up or something more custom.
                                             </p>
                                         </div>
@@ -60,7 +60,7 @@ const Process = () => {
                                 </div>
 
                             </div>
-                            <div className=" gap-2 lg:max-w-7xl lg:mx-auto lg:flex">
+                            <div className=" gap-2 lg:mx-auto lg:flex">
 
                                 <div className="lg:w-[70%]">
                                     <Parallax
@@ -79,14 +79,14 @@ const Process = () => {
                                         className="flex h-full">
                                         <div className="flex flex-col justify-center p-8 border bg-black rounded-3xl max-w-none">
                                             <h2 className="lg:text-[2vw] text-[5vw] font-medium text-lime-400">Step II</h2>
-                                            <p className="mt-4 font-medium text-neutral-200 text-pretty">
+                                            <p className="mt-4 xl:text-[1.3vw] font-medium text-neutral-200 text-pretty">
                                                 You will sign an agreement and submit initial payment to lock in the work.
                                             </p>
                                         </div>
                                     </Parallax>
                                 </div>
                             </div>
-                            <div className=" gap-2 flex-row-reverse lg:max-w-7xl lg:mx-auto lg:flex">
+                            <div className=" gap-2 flex-row-reverse lg:mx-auto lg:flex">
 
                                 <div className="lg:w-[70%]">
                                     <Parallax
@@ -105,7 +105,7 @@ const Process = () => {
                                             <h2 className="lg:text-[2vw] text-[5vw] font-medium text-red-400">
                                                 Step III
                                             </h2>
-                                            <p className="mt-4 font-medium text-neutral-200 text-pretty">
+                                            <p className="mt-4 xl:text-[1.3vw] font-medium text-neutral-200 text-pretty">
                                                 Once legalities are sorted we get the ball rolling!
                                             </p>
                                         </div>
@@ -119,7 +119,7 @@ const Process = () => {
 
                         <section>
                             <div className="relative py-24 w-full">
-                                <p className=" font-semibold text-center text-indigo-600 uppercase">
+                                <p className="xl:text-[1.5vw] font-semibold text-center text-indigo-600 uppercase">
                                     Trusted by the world’s most innovative teams
                                 </p>
 
