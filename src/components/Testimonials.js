@@ -31,7 +31,7 @@ const Testimonials = () => {
                 <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
                     <div className="flex flex-col w-full">
                         <div className="flex flex-col w-full" aria-labelledby="carousel-label" role="region" tabIndex={0}>
-                            <h2 className='text-rose-500 text-center p-5 lg:text-6xl text-4xl font-[genica]'>
+                            <h2 className='text-rose-500 text-center p-5 lg:text-[5vw] text-4xl font-[genica]'>
                                 Our Client's Love
                             </h2>
                             <h2 className="sr-only" id="carousel-label">Carousel</h2>
@@ -59,7 +59,7 @@ const Testimonials = () => {
                             <ul
                                 className="flex w-full gap-3 mt-4 overflow-x-scroll text-center scrollbar-hide snap-mandatory snap-x rounded-2xl"
                                 role="listbox"
-                                aria-labelledby="carousel-content-label"
+                                // aria-labelledby="carousel-content-label"
                                 tabIndex={0}
                                 ref={sliderRef}
                                 onScroll={handleScroll}
@@ -70,12 +70,12 @@ const Testimonials = () => {
                                             <figcaption className="relative flex flex-col justify-between">
                                                 <img alt={testimonial.alt} src={testimonial.img} className="object-cover mx-auto rounded-full size-14 grayscale" />
                                                 <div className="mt-4">
-                                                    <div className="font-medium text-gray-900">{testimonial.name}</div>
-                                                    <div className="mt-1 text-sm text-gray-500">{testimonial.title}</div>
+                                                    <div className="font-medium xl:text-[1.3vw] text-gray-900">{testimonial.name}</div>
+                                                    <div className="mt-1 xl:text-[1vw] text-gray-500">{testimonial.title}</div>
                                                 </div>
                                             </figcaption>
                                             <blockquote className="mt-4">
-                                                <p className="text-base font-medium text-gray-500">{testimonial.quote}</p>
+                                                <p className="xl:text-[1vw] text-base font-medium text-gray-500">{testimonial.quote}</p>
                                             </blockquote>
                                         </figure>
                                     </li>

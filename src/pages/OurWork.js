@@ -32,18 +32,6 @@ const OurWork = () => {
             'img': "images/client_success_results/5.svg"
         },
         {
-            'client': 'Finance by Himanshu',
-            'Client_Overview': "Finance by Himanshu is a finance expert and influencer who joined us three months ago. The focus has been on building his presence from scratch and establishing him as a goto source for financial guidance.",
-            "strategy1": "Content Development: Created and curated financerelated content that resonates with the target audience, including educational posts, tips, and financial news.",
-            "strategy2": "Engagement Tactics: Implemented Q&A sessions, polls, and interactive stories to increase follower engagement.",
-            "strategy3": "SEO Optimization: Utilized relevant keywords in post captions and descriptions to improve discoverability",
-            "strategy4": "Lead Generation: Developed strategies to attract leads interested in personal finance guidance, resulting in substantial lead acquisition.",
-            "growth1": "Accounts Reached: Over 15,000 accounts reached.",
-            "growth2": "Impressions: More than 21,000 impressions.",
-            "growth3": "Leads Generated: Secured over 20 interested leads for personal finance guidance.",
-            'img': "images/client_success_results/7.svg"
-        },
-        {
             'client': 'BTS Island',
             'Client_Overview': "A BTS fan account aimed at creating content for BTS enthusiasts and growing organically on Instagram.",
             "strategy1": "Hashtag Optimization: Utilized trending and nichespecific hashtags to increase organic reach.",
@@ -65,6 +53,18 @@ const OurWork = () => {
             "growth1": "Client Acquisition: Increased salon visits and expanded the client base through effective use of visual content and targeted ads.",
             "growth2": "Brand Awareness: Improved brand credibility and trust through customer testimonials and consistent engagement.",
             'img': "images/client_success_results/13.svg"
+        },
+        {
+            'client': 'Finance by Himanshu',
+            'Client_Overview': "Finance by Himanshu is a finance expert and influencer who joined us three months ago. The focus has been on building his presence from scratch and establishing him as a goto source for financial guidance.",
+            "strategy1": "Content Development: Created and curated financerelated content that resonates with the target audience, including educational posts, tips, and financial news.",
+            "strategy2": "Engagement Tactics: Implemented Q&A sessions, polls, and interactive stories to increase follower engagement.",
+            "strategy3": "SEO Optimization: Utilized relevant keywords in post captions and descriptions to improve discoverability",
+            "strategy4": "Lead Generation: Developed strategies to attract leads interested in personal finance guidance, resulting in substantial lead acquisition.",
+            "growth1": "Accounts Reached: Over 15,000 accounts reached.",
+            "growth2": "Impressions: More than 21,000 impressions.",
+            "growth3": "Leads Generated: Secured over 20 interested leads for personal finance guidance.",
+            'img': "images/client_success_results/7.svg"
         },
     ]
 
