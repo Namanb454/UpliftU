@@ -9,6 +9,7 @@ import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 import OurResults from '../components/OurResults'
 import OurWork from './OurWork'
+import About from './About'
 
 const Home = () => {
 
@@ -16,8 +17,8 @@ const Home = () => {
         <ParallaxProvider >
             <div className='font-[quench]'>
                 <div className='relative overflow-hidden p-5 text-balance font-[quench]'>
-
                     <Navbar />
+
 
                     {/* Banner */}
                     <div className=" z-10 w-full ">
@@ -171,9 +172,60 @@ const Home = () => {
                     </Parallax>
                 </Parallax>
 
-                <OurWork />
+                {/* <OurWork /> */}
+                <div className='py-24 lg:px-24 relative overflow-hidden p-5 text-balance font-sans font-semibold'>
+                    <OurResults />
+                </div>
 
                 <Testimonials />
+
+
+                <section className="relative flex items-center justify-center text-white bg-neutral-900">
+                    <div className="relative items-center w-full px-5 py-12 mx-auto max-w-7xl lg:px-16 lg:py-32 md:px-12">
+                        <div>
+                            <div className="relative text-center">
+                                <h1 className="text-center p-5 lg:text-[3vw] text-4xl font-[genica]">
+                                    Who are the CEO's<span className="">&nbsp;behind the Business?</span>
+                                </h1>
+
+                                <div className='py-24'>
+                                    <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold">
+                                        The Story of Naineesh & Anmol
+                                    </h2>
+                                    <p className="text-[1.5vw] mx-auto mt-4 text-center font-[quench]">
+                                        With over 5+ years of total experience in Sales, Marketing and Social Media, Naineesh & Anmol have a big mission: Revolutionalized hospitality industry by making them orginals creators over social media sand not over rely on influencers!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="relative items-center w-full py-12 pb-12 mx-auto mt-12 max-w-7xl">
+                            <svg fill="none" viewBox="0 0 400 400" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="absolute -mt-24 blur-3xl">
+                                <g clipPath="url(#clip0_10_20)">
+                                    <g filter="url(#filter0_f_10_20)">
+                                        <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#ff237d" />
+                                        <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#7C87F8" />
+                                        <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#4C65E4" />
+                                        <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#043AFF" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="720.666" id="filter0_f_10_20" width="720.666" x="-160.333" y="-160.333">
+                                        {/* <feFlood floodOpacity={0} result="BackgroundImageFix" />
+                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+                  <feGaussianBlur result="effect1_foregroundBlur_10_20" stdDeviation="80.1666" /> */}
+                                    </filter>
+                                </defs></svg><img src='images/founder.webp' className="relative object-cover w-fit mx-auto" />
+
+                        </div>
+                        <div className='w-fit mx-auto'>
+                            <a className="py-3 px-4 inline-flex items-center gap-x-2 text-base font-bold border-r-4 border-b-4 border-indigo-500 bg-black text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none" href="/about">
+                                Read More
+                                <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
 
                 <Contact />
 

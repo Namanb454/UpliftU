@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <ParallaxProvider>
             <Parallax>
-                <div className='font-[quench] overflow-hidden '>
+                <div className='font-[quench] overflow-hidden items-center'>
                     <nav className="scroll-smooth flex lg:py-[2vh] py-2 md:space-x-10 px-[5vw] font-semibold shadow-black shadow-sm">
                         <div className="flex-1 w-fit md:h-auto h-[5vh]">
                             <div className="text-indigo-400 bg-black py-2 px-3 w-fit rounded-md">
@@ -46,14 +46,14 @@ const Navbar = () => {
                         </div>
 
                         <div className="items-center justify-end w-fit">
-                            <button onClick={() => setIsOpen(!isOpen)} className={`w-fit p-2 rounded-md focus:outline-none`}>
+                            <button onClick={() => setIsOpen(!isOpen)} className={`items-center w-fit p-2 rounded-md focus:outline-none`}>
                                 {isOpen ?
                                     <motion.svg
                                         initial={{ scale: 0 }}
                                         whileInView={{ scale: 1 }}
                                         whileTap={{ scale: 0 }}
                                         transform={{ duration: 0.5 }}
-                                        className="h-0 w-0 block text- "
+                                        className="h-0 w-0 block text- items-center"
                                         viewBox="0 0 0 0"
                                         fill="none"
                                         stroke="currentColor"
@@ -70,7 +70,7 @@ const Navbar = () => {
                                         whileInView={{ scale: 1 }}
                                         whileTap={{ scale: 0 }}
                                         transform={{ duration: 0.5 }}
-                                        className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        className="block h-12 w-6 items-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                     </motion.svg>}
                             </button>

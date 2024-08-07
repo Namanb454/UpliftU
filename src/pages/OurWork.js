@@ -69,8 +69,12 @@ const OurWork = () => {
     ]
 
     return (
-        <div>
-            <div className='py-24 lg:px-24 relative overflow-hidden p-5 text-balance font-sans font-semibold'>
+        <div className='relative overflow-hidden text-balance font-[quench]'>
+
+            <div className='p-5'>
+                <Navbar />
+            </div>
+            <div className='z-10 w-full py-24 lg:px-24 overflow-hidden p-5 text-balance font-sans font-semibold'>
 
 
 
@@ -141,7 +145,7 @@ const OurWork = () => {
                                     </div>
                                     <div className="order-first block w-full mt-12 lg:mt-0">
                                         <div className="h-full p-2 duration-500 hover:scale-125 border shadow-lg bg-gray-50 rounded-3xl">
-                                            <img alt="#_" className="relative w-full rounded-2xl drop-shadow-2xl" src={data.img} />
+                                            <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src={data.img} />
                                         </div>
                                     </div>
                                 </div>
@@ -153,6 +157,7 @@ const OurWork = () => {
 
 
             </div>
+            <Contact />
         </div>
     )
 }
