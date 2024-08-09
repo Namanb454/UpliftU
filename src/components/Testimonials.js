@@ -31,14 +31,14 @@ const Testimonials = () => {
                 <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
                     <div className="flex flex-col w-full">
                         <div className="flex flex-col w-full" aria-labelledby="carousel-label" role="region" tabIndex={0}>
-                            <h2 className='text-rose-500 text-center p-5 lg:text-[5vw] text-4xl font-[genica]'>
+                            <h2 className='bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-center p-5 lg:text-[5vw] text-4xl font-[genica]'>
                                 Our Client's Love
                             </h2>
                             <h2 className="sr-only" id="carousel-label">Carousel</h2>
                             <span className="sr-only" id="carousel-content-label">Carousel</span>
                             <div className="inline-flex items-center space-x-2 lg:px-2">
                                 <button
-                                    className={`flex items-center text-white bg-indigo-500 rounded-full hover:bg-indigo-600 size-8 focus:bg-blue-400 ${atBeginning ? 'opacity-50' : ''}`}
+                                    className={`flex items-center text-white bg-[#0d2c5e] rounded-full hover:bg-[#489b9c] size-8 focus:bg-[#bae2e4] ${atBeginning ? 'opacity-50' : ''}`}
                                     aria-disabled={atBeginning}
                                     onClick={prev}
                                     tabIndex={0}
@@ -47,7 +47,7 @@ const Testimonials = () => {
                                     <span className="sr-only">Skip to previous slide page</span>
                                 </button>
                                 <button
-                                    className={`flex items-center text-white bg-indigo-500 rounded-full hover:bg-indigo-600 size-8 focus:bg-blue-400 ${atEnd ? 'opacity-50' : ''}`}
+                                    className={`flex items-center text-white bg-[#0d2c5e] rounded-full hover:bg-[#489b9c] size-8 focus:bg-[#bae2e4] ${atEnd ? 'opacity-50' : ''}`}
                                     aria-disabled={atEnd}
                                     onClick={next}
                                     tabIndex={0}

@@ -4,12 +4,12 @@ const Contact = () => {
     return (
         <div>
             {/* Contact */}
-            <div className="bg-neutral-900 font-sans font-semibold text-[1.3vw]">
-                <div className="max-w-7xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
+            <div className="bg-neutral-900 font-sans font-semibold xl:text-[1.3vw]">
+                <div className="px-4 xl:px-[10vw] py-10 lg:py-20 mx-auto">
                     {/* Title */}
                     <div className="max-w-3xl mb-10 lg:mb-14">
-                        <h2 className="font-[genica] text-amber-400 text-[10vw] md:text-5xl lg:text-7xl">Contact us</h2>
-                        <p className="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
+                        <h2 className="font-[genica] bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent text-[10vw] md:text-5xl lg:text-7xl">Contact us</h2>
+                        <p className="mt-1 text-[#f3f7f8]">Whatever your goal - we will get you there.</p>
                     </div>
                     {/* End Title */}
                     {/* Grid */}
@@ -113,7 +113,7 @@ const Contact = () => {
                                         All fields are required
                                     </p>
                                     <p className="mt-5">
-                                        <a className="group inline-flex items-center gap-x-2 py-2 px-3 bg-indigo-500 font-medium  text-white rounded-full focus:outline-none" href="#">
+                                        <a className="group inline-flex items-center gap-x-2 py-2 px-3  border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] font-medium  text-white focus:outline-none" href="#">
                                             Submit
                                             <svg className="shrink-0 size-4 transition group-hover:translate-x-0.5 group-hover:translate-x-0 group-focus:translate-x-0.5 group-focus:translate-x-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                                         </a>
@@ -153,7 +153,7 @@ const Contact = () => {
                                     <h4 className="text-white font-semibold">We're hiring</h4>
                                     <p className="mt-1 text-neutral-400">We're thrilled to announce that we're expanding our team and looking for talented individuals like you to join us.</p>
                                     <p className="mt-2">
-                                        <a className="group inline-flex items-center gap-x-2 font-medium  text-indigo-500 decoration-2 hover:underline focus:outline-none focus:underline" href="#">
+                                        <a className="group inline-flex items-center gap-x-2 font-medium  text-[#bae2e4] decoration-2 hover:underline focus:outline-none focus:underline" href="#">
                                             Job openings
                                             <svg className="shrink-0 size-4 transition group-hover:translate-x-0.5 group-hover:translate-x-0 group-focus:translate-x-0.5 group-focus:translate-x-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                                         </a>

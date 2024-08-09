@@ -36,10 +36,10 @@ const Navbar = () => {
                 <div className='font-[quench] overflow-hidden items-center'>
                     <nav className="scroll-smooth flex lg:py-[2vh] py-2 md:space-x-10 px-[5vw] font-semibold shadow-black shadow-sm">
                         <div className="flex-1 w-fit md:h-auto h-[5vh]">
-                            <div className="text-indigo-400 bg-black py-2 px-3 w-fit rounded-md">
+                            <div className="text-indigo-400 w-fit rounded-md">
                                 <a href='/' className='flex w-fit' aria-label="Home">
-                                    {/* <img className="lg:w-[5vw] w-[15vw] items-center" src="sitescriptwhitelogo.png" alt="Logo" /> */}
-                                    <h2 className='lg:text-[2vw] md:text-[2vw] text-[5vw] '>Uplift-U</h2>
+                                    <img className="lg:w-[10vw] w-[15vw] items-center" src="images/UpliftU_Hospitality .svg" alt="Logo" />
+                                    {/* <h2 className='lg:text-[2vw] md:text-[2vw] text-[5vw] '>Uplift-U</h2> */}
                                 </a>
 
                             </div>

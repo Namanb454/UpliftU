@@ -74,7 +74,7 @@ const OurWork = () => {
             <div className='p-5'>
                 <Navbar />
             </div>
-            <div className='z-10 w-full py-24 lg:px-24 overflow-hidden p-5 text-balance font-sans font-semibold'>
+            <div className=' w-full py-0 lg:p-24 overflow-hidden p-5 text-balance font-sans font-semibold'>
 
 
 

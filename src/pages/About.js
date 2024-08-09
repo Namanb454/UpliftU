@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Contact from '../components/Contact'
 
 const About = () => {
+
   return (
     <div className='relative overflow-hidden text-balance font-[quench]'>
 
@@ -10,8 +11,8 @@ const About = () => {
         <Navbar />
       </div>
 
-      <section className="z-10 w-full flex items-center justify-center text-white bg-neutral-900">
-        <div className=" items-center w-full px-5 py-12 mx-auto max-w-7xl lg:px-16 lg:py-32 md:px-12">
+      <section className="z-10 w-full flex items-center justify-center text-[#f3f7f8] bg-neutral-900 ">
+        <div className=" items-center w-full px-5 pt-12 mx-auto lg:px-px-[10vw] lg:pt-32 md:px-0">
           <div>
             <div className=" text-center">
               <h1 className="text-center p-5 lg:text-[3vw] text-4xl">
@@ -19,16 +20,16 @@ const About = () => {
               </h1>
 
               <div className='py-24'>
-                <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold bg-gradient-to-l from-indigo-500 to-amber-400 bg-clip-text text-transparent font-[genica]">
+                <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent font-[genica]">
                   The Story of Naineesh & Anmol
                 </h2>
-                <p className="text-[1.5vw] mx-auto mt-4 text-center font-[quench]">
+                <p className="xl:text-[1.5vw] mx-auto mt-4 text-center font-[quench]">
                   With over 5+ years of total experience in Sales, Marketing and Social Media, Naineesh & Anmol have a big mission: Revolutionalized hospitality industry by making them orginals creators over social media sand not over rely on influencers!
                 </p>
               </div>
             </div>
           </div>
-          <div className=" items-center w-full py-12 pb-12 mx-auto mt-12 max-w-7xl">
+          <div className=" items-center w-full xl:pt-12 mx-auto xl:mt-12 ">
             <svg fill="none" viewBox="0 0 400 400" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="absolute -mt-24 blur-3xl">
               <g clipPath="url(#clip0_10_20)">
                 <g filter="url(#filter0_f_10_20)">
@@ -44,23 +45,23 @@ const About = () => {
                   <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
                   <feGaussianBlur result="effect1_foregroundBlur_10_20" stdDeviation="80.1666" /> */}
                 </filter>
-              </defs></svg><img src='images/founder.webp' className=" object-cover w-fit mx-auto" />
+              </defs></svg><img src='images/Naineesh-Photoroom.png' alt="CEO's" className=" object-cover xl:w-[50vw] backdrop-brightness-90 mx-auto" />
 
           </div>
         </div>
       </section>
 
       <section className='w-full h-full'>
-        <div className=" items-center w-full px-5 py-12 mx-auto max-w-7xl lg:px-16 lg:py-32 md:px-12">
+        <div className=" items-center w-full px-5 py-12 mx-auto lg:px-[10vw] lg:py-32 md:px-12">
           <div>
-            <h2 className='text-[3vw] bg-gradient-to-l font-[genica] from-indigo-500 from-[50%] to-amber-500 bg-clip-text text-transparent'>
+            <h2 className='xl:text-[3vw] text-[8vw] font-[genica] bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent'>
               How did it all start?
             </h2>
           </div>
         </div>
         <div className=' items-center w-full text-white bg-neutral-900'>
-          <div className='w-full px- mx-auto py-12 max-w-7xl lg:px- lg:py-32 md:px-'>
-            <p className='text-[1.3vw] font-'>A little over 2 years ago, Naineesh was handling one of the greatest personalities' social media accounts and experiencing significant growth. Living a daily normal life, everything changed when he received a message in a group called Fight Club, that he and Anmol, had created during their college days.
+          <div className='w-full px-5 mx-auto py-12 lg:px-[10vw] lg:py-32 md:px-'>
+            <p className='xl:text-[1.3vw] font-mono'>A little over 2 years ago, Naineesh was handling one of the greatest personalities' social media accounts and experiencing significant growth. Living a daily normal life, everything changed when he received a message in a group called Fight Club, that he and Anmol, had created during their college days.
               <br />
               <br />
 
@@ -82,14 +83,155 @@ const About = () => {
       </section>
 
 
+      {/* Who is Naineesh */}
       <section>
-        <div className=" items-center w-full py-12 mx-auto max-w-7xl lg:py-32">
+        <div className=" items-center w-full py-12 mx-auto  lg:py-24 px-[10vw]  xl:text-justify">
+          <div className="xl:flex items-center grid-cols-1 gap-6 lg:grid-cols-2">
+            <div className="md:order-first space-y-[5vh] xl:text-[1vw]">
+              <h1 className="xl:text-[3vw] text-[8vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica]">
+                Who is Naineesh?
+              </h1>
+
+              <div className='flex xl:text-justify space-x-[4vw] text-neutral-600'>
+
+                <div className='space-y-[2vh]'>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Hospitality and Social Media Expert, Alumnus of IHM Mumbai
+                  </h2>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Channel partner for uFaber, a leading Edutech company in India
+                  </h2>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Acheived over <span className='font-sans font-semibold'>30,000</span> followers and<span className='font-sans font-semibold'> 25</span> million+ interactions on social profiles in less than two months
+                  </h2>
+                </div>
+
+                <div className='space-y-[2vh]'>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Coached <span className='font-sans font-semibold'>1,800+</span> entrepreneurs to start from scratch and achieve seven-figure incomes
+                  </h2>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Managed social media for a prominent internet personality, achieving viral success in<span className='font-sans font-semibold'> 2021-2022.</span>
+                  </h2>
+                </div>
+
+              </div>
+
+              <div className='space-y-[3vh]'>
+                <h2 className='xl:text-[1.3vw] text-[5vw]'>
+                  Fun Facts about CEO Naineesh
+                </h2>
+
+                <div className='space-y-[2vh] text-neutral-600'>
+                  <h3>
+                    <span className='font-sans font-semibold'>1.</span> Chess Master: Naineesh is extremely hard to defeat in chess. His strategic thinking on the chessboard often translates to his innovative strategies in business.
+                  </h3>
+                  <h3>
+                    <span className='font-sans font-semibold'>2.</span> Met Andrew Tate: During an unexpected encounter, Naineesh met the well-known internet personality Andrew Tate. Though brief, the experience left a memorable impression with having a steak together.
+                  </h3>
+                  <h3>
+                    <span className='font-sans font-semibold'>3.</span> Mind Palace Technique: Naineesh has mastered the Mind Palace Technique, a method for memorizing vast amounts of information, which he often uses to his advantage in both professional and personal settings.
+                  </h3>
+                </div>
+
+              </div>
+
+            </div>
+            <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
+              <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
+                <img alt="#_" className="relative w-full rounded-2xl drop-shadow-2xl" src="/images/Naineesh.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Who is Anmol */}
+      <section>
+        <div className=" items-center w-full py-12 mx-auto  lg:py-24 px-[10vw]  xl:text-justify">
+          <div className="xl:flex items-center grid-cols-1 gap-6 lg:grid-cols-2 xl:flex-row-reverse">
+            <div className="md:order-first space-y-[5vh] xl:text-[1vw]">
+              <h1 className="xl:text-[3vw] text-[6vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica]">
+                Who is Anmol More?
+              </h1>
+
+              <div className='flex xl:text-justify space-x-[4vw] text-neutral-600'>
+
+                <div className='space-y-[2vh]'>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Marketing and Communication Expert with a Strong Network.
+                  </h2>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Generated significant networks and deals for clients and brands.
+                  </h2>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Coached over <span className='font-sans font-semibold'>200</span> clients to success.
+                  </h2>
+                </div>
+
+                <div className='space-y-[2vh]'>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Helped clients achieve<span className='font-sans font-semibold'> 70,000+</span>followers and a <span className='font-sans font-semibold'>2+</span> million reach on Instagram in a year.
+                  </h2>
+                  <h2>
+                    <div className='text-[#0d2c5e]'>❖</div>
+                    Fluent in six languages, enhancing his ability to connect and communicate effectively.
+                  </h2>
+                </div>
+
+              </div>
+
+              <div className='space-y-[3vh]'>
+                <h2 className='xl:text-[1.3vw] text-[5vw]'>
+                  Fun Facts about CEO Anmol
+                </h2>
+
+                <div className='space-y-[2vh] text-neutral-600'>
+                  <h3>
+                    <span className='font-sans font-bold'>1.</span> <span className='font-bold'>Snap Learner:</span> Learning new skills comes effortlessly to Anmol, as if he could snap his fingers and master a new ability. This knack for rapid learning keeps him ahead in the fast-paced world of marketing.
+
+                  </h3>
+                  <h3>
+                    <span className='font-sans font-bold'>2.</span> <span className='font-bold'>Power House:</span> Known for his boundless energy and drive, Anmol is the powerhouse of UpliftU, always pushing the team towards excellence.
+
+                  </h3>
+                  <h3>
+                    <span className='font-sans font-bold'>3.</span> <span className='font-bold'>Jugadu (Makeshifter):</span> Anmol has a unique talent for finding creative solutions to any problem. His makeshift innovations often surprise and impress clients and colleagues alike.
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
+              <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
+                <img alt="#_" className="relative w-full rounded-2xl drop-shadow-2xl" src="/images/Anmol.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Philosophy */}
+      <section>
+        <div className=" items-center w-full py-12 mx-auto  lg:py-32 px-[10vw]">
           <div className="grid items-center grid-cols-1 gap-6 lg:grid-cols-2">
             <div className="md:order-first">
-              <h1 className="text-[3vw] font-semibold tracking-tighter bg-gradient-to-l from-indigo-500 from-[50%] to-amber-500 bg-clip-text text-transparent text-balance font-[genica]">
+              <h1 className="xl:text-[3vw] text-[6vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica]">
                 Our Philosophy
               </h1>
-              <p className="mt-4 text-[1.3vw] font-medium text-gray-500">
+              <p className="mt-4 xl:text-[1vw] font-medium text-neutral-600 text-justify">
                 "Social media is powerful, especially when it transforms hospitality brands into influential voices."
                 <br />
                 <br />
@@ -99,7 +241,7 @@ const About = () => {
                 We believe working with us is not just effective but also enjoyable, as we incorporate humor and creativity into our approach which are the pillars of social media.
                 <br />
                 <br />
-                With over 50 million interactions in our exclusive client success results, we provide top-notch support and guidance to help your brand achieve unparalleled social media success.
+                With over <span className='font-sans font-bold'>50</span> million interactions in our exclusive client success results, we provide top-notch support and guidance to help your brand achieve unparalleled social media success.
                 <br />
                 <br />
                 It’s not always easy, but achieving your brand's full potential is more attainable when you have the right strategies and unwavering support.
@@ -114,6 +256,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+
 
 
 
