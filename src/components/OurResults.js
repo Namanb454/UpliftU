@@ -38,19 +38,13 @@ const OurResults = () => {
         <ParallaxProvider>
             <div className='z-10 w-full'>
                 <section>
-                    <div className=" mx-auto font-[quench]"
+                    <div className="my-[5vh] mx-auto poppins-semibold"
                     >
-
                         <div>
-                            <h1 className="text-stroke bowlby-one-regular lg:text-[5vw] text-4xl text-neutral-900  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
+                            <h1 className="font-[genica] lg:text-[5vw] text-4xl text-neutral-900 text-balance" >
                                 Our
                                 <span className="bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent">&nbsp;Results</span>
                             </h1>
-                            <p className="my-5 xl:text-[1.5vw] text-base font- text-[#1f2740] text-balance">
-                                Control and added security. With decentralization, users have more
-                                control over their data and transactions, and the platform is less
-                                susceptible to malicious attacks.
-                            </p>
                         </div>
 
                     </div>
@@ -58,8 +52,8 @@ const OurResults = () => {
 
 
                 <section className="">
-                    <div className="px-8 mx-auto md:px-12 lg:px-0 h-full">
-                        <div className="flex flex-col mx-auto sm:flex-row border-2 rounded-lg border-neutral-200 p-10">
+                    <div className="px- mx-auto md:px-12 lg:px-0 h-full">
+                        <div className="flex flex-col mx-auto sm:flex-row border-2 rounded-3xl border-[#0d2c5e] p-5">
                             {
                                 results.map((data, index) => {
                                     return (

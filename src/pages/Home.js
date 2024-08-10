@@ -38,8 +38,8 @@ const Home = () => {
 
     return (
         <ParallaxProvider >
-            <div className='font-[quench]'>
-                <div className='relative overflow-hidden p-5 text-balance font-[quench]'>
+            <div className='poppins-semibold tracking-wide'>
+                <div className='relative overflow-hidden p-5 text-balance poppins-semibold'>
                     <Navbar />
 
 
@@ -59,11 +59,11 @@ const Home = () => {
                                 </div>
                                 {/* End Title */}
                                 {/* <div className="mt-5 max-w-6xl">
-                                    <p className=" font-semibold text-lg text-black/50">100% guaranteed audience interactions</p>
+                                    <p className=" font-semibold text-lg text-[#1f2740]/50">100% guaranteed audience interactions</p>
                                 </div> */}
                                 {/* Buttons */}
                                 <div className="mt-8 gap-3 flex justify-center">
-                                    <a className="py-3 px-4 inline-flex items-center gap-x-2 text-base font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
+                                    <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
                                         Get started now
                                         <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                     </a>
@@ -79,19 +79,19 @@ const Home = () => {
                         {/* Grid */}
                         <div className="grid gap-6 grid-cols-1 sm:gap-12 lg:grid-cols-3 lg:gap-8">
                             <div>
-                                <h4 className="text-lg sm:text-xl font-semibold text-neutral-900 ">Accuracy rate</h4>
+                                <h4 className="xl:text-[1.5vw] font-semibold text-neutral-900 ">Accuracy rate</h4>
                                 <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-[#489b9c] font-sans">99.95%</p>
-                                <p className="mt-1 text-neutral-900">in fulfilling orders</p>
+                                <p className="mt-2 sm:mt-3 xl:text-[1.5vw] text-neutral-900">in fulfilling orders</p>
                             </div>
                             <div>
-                                <h4 className="text-lg sm:text-xl font-semibold text-neutral-900 ">Startup businesses</h4>
+                                <h4 className="xl:text-[1.5vw] font-semibold text-neutral-900 ">Startup businesses</h4>
                                 <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-[#489b9c] font-sans">2,000+</p>
-                                <p className="mt-1 text-neutral-900">partner with UpliftU</p>
+                                <p className="mt-2 sm:mt-3 xl:text-[1.5vw] text-neutral-900">partner with UpliftU</p>
                             </div>
                             <div>
-                                <h4 className="text-lg sm:text-xl font-semibold text-neutral-900 ">Happy customer</h4>
+                                <h4 className="xl:text-[1.5vw] font-semibold text-neutral-900 ">Happy customer</h4>
                                 <p className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-[#489b9c] font-sans">85%</p>
-                                <p className="mt-1 text-neutral-900">this year alone</p>
+                                <p className="mt-2 sm:mt-3 xl:text-[1.5vw] text-neutral-900">this year alone</p>
                             </div>
                         </div>
                         {/* End Grid */}
@@ -102,7 +102,7 @@ const Home = () => {
 
 
                 {/* Services  */}
-                <div className='bg-neutral-900 w-full font-[quench] px-5 '
+                <div className='bg-neutral-900 w-full poppins-semibold px-5 '
                 >
                     <div className='backdrop-blur-sm w-full py-24'>
                         <h2 className='text-[#489b9c] text-center p-5 lg:text-6xl text-4xl font-[genica]'>
@@ -136,14 +136,14 @@ const Home = () => {
                                                     `}>{data.title}</h2>
                                                     </div>
 
-                                                    <div className="text-balance xl:h-[20vh]">
-                                                        <p className="mt-2 text-[#f3f7f8] text-justify xl:w-[90%] mx-auto xl:text-[1vw]">
+                                                    <div className="text-balance">
+                                                        <p className="mt-2 xl:h-[30vh] font-light text-[#f3f7f8] text-justify xl:w-[90%] mx-auto xl:text-[1.3vw]">
                                                             {data.desc2}
                                                         </p>
 
                                                     </div>
                                                     <div className="mt-8 gap-3 flex justify-center">
-                                                        <a className="py-3 px-4 inline-flex items-center gap-x-2 text-base font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
+                                                        <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
                                                             Get started now
                                                             <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                                         </a>
@@ -160,7 +160,7 @@ const Home = () => {
                         <h2 className='text-neutral-200 lg:text-[3vw] text-[6vw] text-center'>
                             UpliftU is uplifting the businesses to the stratosphere!
                         </h2>
-                        <h2 className='text-[#bae2e4] lg:text-[1.3vw] text-center m-5'>
+                        <h2 className='text-[#bae2e4] lg:text-[1.5vw] text-center m-5'>
                             Join the UpliftU Revolution, Make a change. Support the cause! Experience Beyond the marketing for engagement
                         </h2>
                     </div>
@@ -170,19 +170,13 @@ const Home = () => {
                 {/* Process */}
                 <div>
                     <section>
-                        <div className=" lg:p-24 p-5 mx-auto font-[quench] overflow-hidden"
-                        >
+                        <div className=" lg:p-24 p-5 mx-auto poppins-semibold overflow-hidden space-y-[5vh]">
 
                             <div>
-                                <h1 className="text-stroke font-[genica] lg:text-[4vw] text-4xl text-neutral-900  text-balance" style={{ WebkitTextStrokeColor: `calc(10px * var(--progress))` }}>
+                                <h1 className="font-[genica] lg:text-[4vw] text-4xl text-neutral-900 text-balance">
                                     Here the proecess
                                     <span className="bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent">&nbsp;how we will work with you</span>
                                 </h1>
-                                <p className="my-10 xl:text-[1.5vw] font- text-[#1f2740] text-balance">
-                                    Control and added security. With decentralization, users have more
-                                    control over their data and transactions, and the platform is less
-                                    susceptible to malicious attacks.
-                                </p>
                             </div>
                             <div className="space-y-2">
                                 <div className=" gap-2 lg:flex-row-reverse lg:mx-auto lg:flex">
@@ -202,10 +196,10 @@ const Home = () => {
 
                                             className="flex h-full">
                                             <div className="flex flex-col justify-center p-8 border bg-neutral-900 rounded-3xl max-w-none">
-                                                <h2 className="lg:text-[2vw] text-[5vw] font-medium text-indigo-400">
+                                                <h2 className="lg:text-[2vw] text-[5vw] text-indigo-400">
                                                     Step I
                                                 </h2>
-                                                <p className="mt-4 xl:text-[1.3vw] font-medium text-[#f3f7f8] text-justify text-pretty">
+                                                <p className="mt-4 xl:text-[1.3vw] font-light text-[#f3f7f8] text-justify text-pretty">
                                                     We chat & confirm what you want to achieve and the services that will get you there – whether it be individual services, packaging it up or something more custom.
                                                 </p>
                                             </div>
@@ -231,8 +225,8 @@ const Home = () => {
 
                                             className="flex h-full">
                                             <div className="flex flex-col justify-center p-8 border bg-neutral-900 rounded-3xl max-w-none">
-                                                <h2 className="lg:text-[2vw] text-[5vw] font-medium text-lime-400">Step II</h2>
-                                                <p className="mt-4 xl:text-[1.3vw] font-medium text-[#f3f7f8] text-justify text-pretty">
+                                                <h2 className="lg:text-[2vw] text-[5vw] text-lime-400">Step II</h2>
+                                                <p className="mt-4 xl:text-[1.3vw] font-light text-[#f3f7f8] text-justify text-pretty">
                                                     You will sign an agreement and submit initial payment to lock in the work.
                                                 </p>
                                             </div>
@@ -255,10 +249,10 @@ const Home = () => {
                                             // translateX={['20', '-10']}
                                             className="flex h-full">
                                             <div className="flex flex-col justify-center p-8 border bg-neutral-900 rounded-3xl max-w-none">
-                                                <h2 className="lg:text-[2vw] text-[5vw] font-medium text-red-400">
+                                                <h2 className="lg:text-[2vw] text-[5vw] text-red-400">
                                                     Step III
                                                 </h2>
-                                                <p className="mt-4 xl:text-[1.3vw] font-medium text-[#f3f7f8] text-justify text-pretty">
+                                                <p className="mt-4 xl:text-[1.3vw] font-light text-[#f3f7f8] text-justify text-pretty">
                                                     Once legalities are sorted we get the ball rolling!
                                                 </p>
                                             </div>
@@ -281,50 +275,50 @@ const Home = () => {
                                         className="absolute w-full flex mt-12">
                                         <div className=" flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Figma</h2>
                                         </div>
                                         <div className=" flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Figma</h2>
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>zoom</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Zomato</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Facebook</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>CoinBase</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>zoom</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Zomato</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Facebook</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>CoinBase</h2>
 
                                         </div>
                                     </Parallax>
@@ -335,50 +329,50 @@ const Home = () => {
                                         className="absolute w-full flex mt-36">
                                         <div className=" flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Figma</h2>
                                         </div>
                                         <div className=" flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/1.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Figma</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Figma</h2>
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>zoom</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Zomato</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Facebook</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>CoinBase</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/2.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>zoom</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>zoom</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/3.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Zomato</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Zomato</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/4.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>Facebook</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>Facebook</h2>
 
                                         </div>
                                         <div className="flex justify-center col-span-1 px-8">
                                             {/* <img className="max-h-12" src="../images/logos/5.svg" alt="logo" /> */}
-                                            <h2 className='text-black lg:text-[2vw] text-[5vw] '>CoinBase</h2>
+                                            <h2 className='text-[#1f2740] lg:text-[2vw] text-[5vw] '>CoinBase</h2>
 
                                         </div>
                                     </Parallax>
@@ -392,20 +386,9 @@ const Home = () => {
                 </div>
 
 
-
-                {/* <div className='overflow-hidden h- py-24'>
-
-                    <Parallax
-                        scale={['0', '20']}
-                        className='-z-1'
-                    >
-                        <div className=' w-40 h-40 bg-black rounded-full my-40 mx-auto'></div>
-                    </Parallax>
-                </div> */}
-
                 <Parallax
                     opacity={['0', '3']}
-                    className='relative lg:px-24 py-24 px-5 mx-auto font-[quench] overflow-hidden'>
+                    className='relative lg:px-24 py-24 px-5 mx-auto poppins-semibold overflow-hidden'>
                     <Parallax
                         scale={['0', '4']}
                         translateX={['-100', '100']}
@@ -427,7 +410,7 @@ const Home = () => {
                                 <dl className="grid grid-cols-2 gap-4 list-none lg:gap-6 text-pretty lg:mt-0 mt-5">
                                     <div className='bg-amber-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-[#0d2c5e]'>❖</div>
-                                        <dt className="mt-4 font-medium text-black  xl:text-[1.2vw]">
+                                        <dt className="mt-4 text-[#1f2740] font-normal  xl:text-[1.2vw]">
                                             Large followings with
                                             low engagement
 
@@ -442,7 +425,7 @@ const Home = () => {
                                     </div>
                                     <div className='bg-blue-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-[#0d2c5e]'>❖</div>
-                                        <dt className="mt-4 font-medium text-black xl:text-[1.2vw]">
+                                        <dt className="mt-4 text-[#1f2740] font-normal xl:text-[1.2vw]">
                                             In-house teams lack
                                             the creativity to
                                             produce engaging
@@ -451,7 +434,7 @@ const Home = () => {
                                     </div>
                                     <div className='bg-lime-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-[#0d2c5e]'>❖</div>
-                                        <dt className="mt-4 font-medium text-black xl:text-[1.2vw]">Wasting money on
+                                        <dt className="mt-4 text-[#1f2740] font-normal xl:text-[1.2vw]">Wasting money on
                                             boosting reels that
                                             hurt your reach
                                             (algorithm!).</dt>
@@ -459,7 +442,7 @@ const Home = () => {
                                     </div>
                                     <div className='bg-red-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
                                         <div className='text-[#0d2c5e]'>❖</div>
-                                        <dt className="mt-4 font-medium text-black xl:text-[1.2vw]">
+                                        <dt className="mt-4 text-[#1f2740] font-normal xl:text-[1.2vw]">
                                             Relying solely on
                                             posts that don't spark
                                             conversation or
@@ -488,28 +471,47 @@ const Home = () => {
 
                 {/* About  */}
                 <section className="relative flex items-center justify-center text-[#f3f7f8] bg-neutral-900">
-                    <div className="relative items-center w-full px-5 py-12 mx-auto max-w-7xl lg:px-16 lg:py-32 md:px-12">
+                    <div className="relative items-center w-full px-5 pt-24 mx-auto max-w-7xl lg:px-16 lg:py- md:px-12">
                         <div>
                             <div className="relative text-center">
-                                <h1 className="text-center p-5 lg:text-[3vw] text-4xl font-[genica]">
+                                <h1 className="text-center p-5 lg:text-[3vw] text-4xl">
                                     Who are the CEO's<span className="">&nbsp;behind the Business?</span>
                                 </h1>
 
-                                <div className='py-24'>
-                                    <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent">
+                                <div className='py-'>
+                                    <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent font-[genica]">
                                         The Story of Naineesh & Anmol
                                     </h2>
-                                    <p className="xl:text-[1.5vw] mx-auto mt-4 text-center font-[quench]">
+                                    <p className="xl:text-[1.5vw] lg:text-center text-justify mx-auto mt-4 font-light">
                                         With over 5+ years of total experience in Sales, Marketing and Social Media, Naineesh & Anmol have a big mission: Revolutionalized hospitality industry by making them orginals creators over social media sand not over rely on influencers!
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-8 gap-3 flex justify-center">
+                        <div className="mt-0 py-10 gap-3 flex justify-center">
                             <a className="py-3 px-4 inline-flex items-center gap-x-2 text-base font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="/about">
                                 Know More
                                 <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                             </a>
+                        </div>
+                        <div className=" items-center w-full xl:pt-12 mx-auto xl:mt-12 ">
+                            <svg fill="none" viewBox="0 0 400 400" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="absolute -mt-24 blur-3xl">
+                                <g clipPath="url(#clip0_10_20)">
+                                    <g filter="url(#filter0_f_10_20)">
+                                        <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#ff237d" />
+                                        <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#7C87F8" />
+                                        <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#4C65E4" />
+                                        <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#043AFF" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="720.666" id="filter0_f_10_20" width="720.666" x="-160.333" y="-160.333">
+                                        {/* <feFlood floodOpacity={0} result="BackgroundImageFix" />
+                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+                  <feGaussianBlur result="effect1_foregroundBlur_10_20" stdDeviation="80.1666" /> */}
+                                    </filter>
+                                </defs></svg><img src='images/Naineesh-Photoroom.png' alt="CEO's" className=" object-cover xl:w-[50vw] backdrop-brightness-90 mx-auto" />
+
                         </div>
                     </div>
                 </section>

@@ -2,14 +2,14 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div>
+        <div className='poppins-semibold '>
             {/* Contact */}
-            <div className="bg-neutral-900 font-sans font-semibold xl:text-[1.3vw]">
+            <div className="bg-neutral-900 font-sans font-normal xl:text-[1.3vw] ">
                 <div className="px-4 xl:px-[10vw] py-10 lg:py-20 mx-auto">
                     {/* Title */}
                     <div className="max-w-3xl mb-10 lg:mb-14">
                         <h2 className="font-[genica] bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent text-[10vw] md:text-5xl lg:text-7xl">Contact us</h2>
-                        <p className="mt-1 text-[#f3f7f8]">Whatever your goal - we will get you there.</p>
+                        <p className="mt-1 text-[#f3f7f8] font-semibold">Whatever your goal - we will get you there.</p>
                     </div>
                     {/* End Title */}
                     {/* Grid */}
@@ -109,7 +109,7 @@ const Contact = () => {
                                     {/* End Textarea */}
                                 </div>
                                 <div className="mt-2">
-                                    <p className="text-xs text-neutral-500">
+                                    <p className=" text-neutral-500">
                                         All fields are required
                                     </p>
                                     <p className="mt-5">
@@ -129,8 +129,7 @@ const Contact = () => {
                                 <div className="grow">
                                     <h4 className="text-white font-semibold">Our address:</h4>
                                     <address className="mt-1 text-neutral-400  not-italic">
-                                        300 Bath Street, Tay House<br />
-                                        Glasgow G2 4JR, United Kingdom
+                                        Mumbai | Pune | Navi Mumbai<br />
                                     </address>
                                 </div>
                             </div>
@@ -140,8 +139,20 @@ const Contact = () => {
                                 <svg className="shrink-0 size-6 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" /><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" /></svg>
                                 <div className="grow">
                                     <h4 className="text-white font-semibold">Email us:</h4>
-                                    <a className="mt-1 text-neutral-400  hover:text-neutral-200 focus:outline-none focus:text-neutral-200" href="#mailto:example@site.co" target="_blank">
-                                        hello@example.so
+                                    <a className="mt-1 text-neutral-400  hover:text-neutral-200 focus:outline-none focus:text-neutral-200" href="#mailto:marketing@upliftu.in" target="_blank">
+                                        marketing@upliftu.in
+                                    </a>
+                                </div>
+                            </div>
+                            {/* End Item */}
+                            {/* Item */}
+                            <div className="flex gap-x-5">
+                                <svg className="shrink-0 size-6 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" /><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" /></svg>
+                                <div className="grow">
+                                    <h4 className="text-white font-semibold">Call us:</h4>
+                                    <a className="mt-1 text-neutral-400  hover:text-neutral-200 focus:outline-none focus:text-neutral-200" target="_blank">
+                                        +91-7208409350
+                                        <br />+91-7506043703
                                     </a>
                                 </div>
                             </div>

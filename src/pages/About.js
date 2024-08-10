@@ -5,25 +5,25 @@ import Contact from '../components/Contact'
 const About = () => {
 
   return (
-    <div className='relative overflow-hidden text-balance font-[quench]'>
+    <div className='relative overflow-hidden text-balance poppins-semibold tracking-wide'>
 
       <div className='p-5'>
         <Navbar />
       </div>
 
-      <section className="z-10 w-full flex items-center justify-center text-[#f3f7f8] bg-neutral-900 ">
-        <div className=" items-center w-full px-5 pt-12 mx-auto lg:px-px-[10vw] lg:pt-32 md:px-0">
+      <section className=" flex items-center justify-center text-[#f3f7f8] bg-neutral-900">
+        <div className=" items-center w-full px-5 pt-24 mx-auto max-w-7xl lg:px-0 lg:py- md:px-12">
           <div>
             <div className=" text-center">
               <h1 className="text-center p-5 lg:text-[3vw] text-4xl">
                 Who are the CEO's<span className="">&nbsp;behind the Business?</span>
               </h1>
 
-              <div className='py-24'>
+              <div className='py-'>
                 <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent font-[genica]">
                   The Story of Naineesh & Anmol
                 </h2>
-                <p className="xl:text-[1.5vw] mx-auto mt-4 text-center font-[quench]">
+                <p className="xl:text-[1.5vw] lg:text-center text-justify mx-auto mt-4 font-light">
                   With over 5+ years of total experience in Sales, Marketing and Social Media, Naineesh & Anmol have a big mission: Revolutionalized hospitality industry by making them orginals creators over social media sand not over rely on influencers!
                 </p>
               </div>
@@ -61,7 +61,7 @@ const About = () => {
         </div>
         <div className=' items-center w-full text-white bg-neutral-900'>
           <div className='w-full px-5 mx-auto py-12 lg:px-[10vw] lg:py-32 md:px-'>
-            <p className='xl:text-[1.3vw] font-mono'>A little over 2 years ago, Naineesh was handling one of the greatest personalities' social media accounts and experiencing significant growth. Living a daily normal life, everything changed when he received a message in a group called Fight Club, that he and Anmol, had created during their college days.
+            <p className='xl:text-[1.3vw] font-light text-justify'>A little over 2 years ago, Naineesh was handling one of the greatest personalities' social media accounts and experiencing significant growth. Living a daily normal life, everything changed when he received a message in a group called Fight Club, that he and Anmol, had created during their college days.
               <br />
               <br />
 
@@ -92,7 +92,7 @@ const About = () => {
                 Who is Naineesh?
               </h1>
 
-              <div className='flex xl:text-justify space-x-[4vw] text-neutral-600'>
+              <div className='flex xl:text-justify space-x-[4vw] text-[#1f2740] font-light xl:text-[1.1vw]'>
 
                 <div className='space-y-[2vh]'>
                   <h2>
@@ -127,7 +127,7 @@ const About = () => {
                   Fun Facts about CEO Naineesh
                 </h2>
 
-                <div className='space-y-[2vh] text-neutral-600'>
+                <div className='space-y-[2vh] text-[#1f2740] font-light xl:text-[1.1vw]'>
                   <h3>
                     <span className='font-sans font-semibold'>1.</span> Chess Master: Naineesh is extremely hard to defeat in chess. His strategic thinking on the chessboard often translates to his innovative strategies in business.
                   </h3>
@@ -144,7 +144,7 @@ const About = () => {
             </div>
             <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
               <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
-                <img alt="#_" className="relative w-full rounded-2xl drop-shadow-2xl" src="/images/Naineesh.jpg" />
+                <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src="/images/Naineesh.jpg" />
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@ const About = () => {
                 Who is Anmol More?
               </h1>
 
-              <div className='flex xl:text-justify space-x-[4vw] text-neutral-600'>
+              <div className='flex xl:text-justify space-x-[4vw] text-[#1f2740] font-light xl:text-[1.1vw]'>
 
                 <div className='space-y-[2vh]'>
                   <h2>
@@ -196,7 +196,7 @@ const About = () => {
                   Fun Facts about CEO Anmol
                 </h2>
 
-                <div className='space-y-[2vh] text-neutral-600'>
+                <div className='space-y-[2vh] text-[#1f2740] font-light xl:text-[1.1vw]'>
                   <h3>
                     <span className='font-sans font-bold'>1.</span> <span className='font-bold'>Snap Learner:</span> Learning new skills comes effortlessly to Anmol, as if he could snap his fingers and master a new ability. This knack for rapid learning keeps him ahead in the fast-paced world of marketing.
 
@@ -214,7 +214,7 @@ const About = () => {
 
             <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
               <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
-                <img alt="#_" className="relative w-full rounded-2xl drop-shadow-2xl" src="/images/Anmol.png" />
+                <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src="/images/Anmol.png" />
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ const About = () => {
               <h1 className="xl:text-[3vw] text-[6vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica]">
                 Our Philosophy
               </h1>
-              <p className="mt-4 xl:text-[1vw] font-medium text-neutral-600 text-justify">
+              <p className="mt-4 xl:text-[1vw] font-medium text-[#1f2740] font-light xl:text-[1.1vw] text-justify">
                 "Social media is powerful, especially when it transforms hospitality brands into influential voices."
                 <br />
                 <br />
@@ -250,7 +250,7 @@ const About = () => {
             </div>
             <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
               <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
-                <img alt="#_" className="relative w-full rounded-2xl drop-shadow-2xl" src="/images/appify/phone.png" />
+                <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src="/images/appify/phone.png" />
               </div>
             </div>
           </div>
