@@ -38,7 +38,7 @@ const Home = () => {
 
     return (
         <ParallaxProvider >
-            <div className='poppins-semibold tracking-wide'>
+            <div className='poppins-semibold tracking-wide overflow-hidden'>
                 <div className='relative overflow-hidden p-5 text-balance poppins-semibold'>
                     <Navbar />
 
@@ -63,7 +63,7 @@ const Home = () => {
                                 </div> */}
                                 {/* Buttons */}
                                 <div className="mt-8 gap-3 flex justify-center">
-                                    <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
+                                    <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
                                         Get started now
                                         <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                     </a>
@@ -143,7 +143,7 @@ const Home = () => {
 
                                                     </div>
                                                     <div className="mt-8 gap-3 flex justify-center">
-                                                        <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
+                                                        <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
                                                             Get started now
                                                             <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                                         </a>

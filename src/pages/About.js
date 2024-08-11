@@ -87,13 +87,18 @@ const About = () => {
       <section>
         <div className=" items-center w-full py-12 mx-auto  lg:py-24 px-[10vw]  xl:text-justify">
           <div className="xl:flex items-center grid-cols-1 gap-6 lg:grid-cols-2">
+
             <div className="md:order-first space-y-[5vh] xl:text-[1vw]">
-              <h1 className="xl:text-[3vw] text-[8vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica]">
+              <h1 className="xl:text-[3vw] text-[8vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica] xl:w-full w-fit mx-auto">
                 Who is Naineesh?
               </h1>
 
-              <div className='flex xl:text-justify space-x-[4vw] text-[#1f2740] font-light xl:text-[1.1vw]'>
-
+              <div className='items-center xl:flex xl:text-justify space-x-[4vw] text-[#1f2740] font-light xl:text-[1.1vw]'>
+                <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
+                  <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
+                    <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src="/images/Naineesh.jpg" />
+                  </div>
+                </div>
                 <div className='space-y-[2vh]'>
                   <h2>
                     <div className='text-[#0d2c5e]'>❖</div>
@@ -142,11 +147,7 @@ const About = () => {
               </div>
 
             </div>
-            <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
-              <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
-                <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src="/images/Naineesh.jpg" />
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -157,11 +158,16 @@ const About = () => {
         <div className=" items-center w-full py-12 mx-auto  lg:py-24 px-[10vw]  xl:text-justify">
           <div className="xl:flex items-center grid-cols-1 gap-6 lg:grid-cols-2 xl:flex-row-reverse">
             <div className="md:order-first space-y-[5vh] xl:text-[1vw]">
-              <h1 className="xl:text-[3vw] text-[6vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica]">
+              <h1 className="xl:text-[3vw] text-[8vw] font-semibold tracking-tighter bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-balance font-[genica] xl:w-full w-fit mx-auto">
                 Who is Anmol More?
               </h1>
 
-              <div className='flex xl:text-justify space-x-[4vw] text-[#1f2740] font-light xl:text-[1.1vw]'>
+              <div className='items-center xl:flex xl:text-justify space-x-[4vw] text-[#1f2740] font-light xl:text-[1.1vw]'>
+                <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
+                  <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
+                    <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src="/images/Anmol.png" />
+                  </div>
+                </div>
 
                 <div className='space-y-[2vh]'>
                   <h2>
@@ -212,11 +218,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="order-first block w-full mt-12 aspect-square lg:mt-0">
-              <div className="h-full p-2 overflow-hidden border shadow-lg bg-gray-50 rounded-3xl">
-                <img alt="#_" className=" w-full rounded-2xl drop-shadow-2xl" src="/images/Anmol.png" />
-              </div>
-            </div>
+
           </div>
         </div>
       </section>

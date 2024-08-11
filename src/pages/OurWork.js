@@ -74,7 +74,7 @@ const OurWork = () => {
             <div className='p-5'>
                 <Navbar />
             </div>
-            <div className=' w-full py-0 lg:px-24 overflow-hidden p-5 text-balance font-sans font-semibold'>
+            <div className=' w-full py-0 lg:px-24 overflow-hidden p-5 text-balance font-sans font-semibold text-justify'>
 
 
 
@@ -95,32 +95,32 @@ const OurWork = () => {
 
                                 <div className="grid my-12 items-center grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
                                     <div className="md:order-first">
-                                        <h1 className="xl:text-[4vw] text-[6vw] font-semibold tracking-tighter text-gray-900 text-balance popping-semibold">
+                                        <h1 className="xl:text-[4vw] text-[8vw] font-semibold tracking-tighter text-gray-900 text-balance popping-semibold">
                                             {data.client}
                                             {/* <span className="text-gray-600">wherever and anywhere</span> */}
                                         </h1>
                                         <dl className="grid grid-cols- gap-4 mt-12 list-none lg:gap-1">
                                             <div>
                                                 <div className='text-[#489b9c] xl:text-[1.5vw]'>❖</div>
-                                                <dt className="mt-4 font-bold xl:text-[1.5vw]">
+                                                <dt className="mt-4 font-bold xl:text-[1.5vw] text-[5vw]">
                                                     Client Overview
                                                 </dt>
-                                                <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
+                                                <dd className="mt-2 text-[#1f2740] xl:text-[1.1vw]">
                                                     {data.Client_Overview}
                                                 </dd>
                                             </div>
                                             <div>
                                                 <div className='text-[#489b9c] xl:text-[1.5vw]'>❖</div>
-                                                <dt className="mt-4 font-bold xl:text-[1.5vw]">
+                                                <dt className="mt-4 font-bold xl:text-[1.5vw] text-[5vw]">
                                                     Strategies Utilized
                                                 </dt>
-                                                <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
+                                                <dd className="mt-2 text-[#1f2740] xl:text-[1.1vw]">
                                                     {data.strategy1}
                                                 </dd>
-                                                <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
+                                                <dd className="mt-2 text-[#1f2740] xl:text-[1.1vw]">
                                                     {data.strategy2}
                                                 </dd>
-                                                <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
+                                                <dd className="mt-2 text-[#1f2740] xl:text-[1.1vw]">
                                                     {data.strategy3}
                                                 </dd>
                                                 <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
@@ -129,15 +129,15 @@ const OurWork = () => {
                                             </div>
                                             <div>
                                                 <div className='text-[#489b9c] xl:text-[1.5vw]'>❖</div>
-                                                <dt className="mt-4 font-bold xl:text-[1.5vw]">
+                                                <dt className="mt-4 font-bold xl:text-[1.5vw] text-[5vw]">
                                                     Growth Achieved:</dt>
-                                                <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
+                                                <dd className="mt-2 text-[#1f2740] xl:text-[1.1vw]">
                                                     {data.growth1}
                                                 </dd>
-                                                <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
+                                                <dd className="mt-2 text-[#1f2740] xl:text-[1.1vw]">
                                                     {data.growth2}
                                                 </dd>
-                                                <dd className="mt-2 text-[#1f2740] text-[1.1vw]">
+                                                <dd className="mt-2 text-[#1f2740] xl:text-[1.1vw]">
                                                     {data.growth3}
                                                 </dd>
                                             </div>
