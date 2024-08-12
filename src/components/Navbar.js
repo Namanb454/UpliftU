@@ -70,7 +70,7 @@ const Navbar = () => {
                                         whileInView={{ scale: 1 }}
                                         whileTap={{ scale: 0 }}
                                         transform={{ duration: 0.5 }}
-                                        className="block h-12 w-6 items-center" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        className="block h-12 w-6 items-center textwh" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                     </motion.svg>}
                             </button>

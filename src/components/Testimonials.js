@@ -1,86 +1,128 @@
 import React, { useRef, useState } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { motion } from 'framer-motion';
 
 const Testimonials = () => {
-    const sliderRef = useRef(null);
-    const [atBeginning, setAtBeginning] = useState(true);
-    const [atEnd, setAtEnd] = useState(false);
-
-    const handleScroll = () => {
-        const slider = sliderRef.current;
-        if (slider) {
-            setAtBeginning(slider.scrollLeft === 0);
-            setAtEnd(slider.scrollLeft + slider.clientWidth === slider.scrollWidth);
-        }
+    const settings = {
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
-    const scrollTo = (strategy) => {
-        const slider = sliderRef.current;
-        if (slider) {
-            const current = slider.scrollLeft;
-            const offset = slider.firstElementChild.getBoundingClientRect().width;
-            slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' });
-        }
-    };
-
-    const next = () => scrollTo((current, offset) => current + offset);
-    const prev = () => scrollTo((current, offset) => current - offset);
+    const client = [
+        {
+            'title': 'Website Design',
+            'desc': 'From the initial concept to the final product, siteScript exceeded our expectations every step of the way.',
+            'img': '',
+            'name': 'Srijan Mehrotra',
+            'position': 'Founder - Model Verse'
+        },
+        {
+            'title': 'Website Design',
+            'desc': 'SiteScript. They have a very good experience in creating website, I have hired them for my website development and I get a good result.',
+            'img': '',
+            'name': 'Rajan Kumar',
+            'position': 'Founder - Staffison'
+        },
+        {
+            'title': 'Efficient customer support',
+            'desc': 'Choosing siteScript for our website design and development was one of the best decisions we made. Their team was responsive, collaborative, and highly skilled.',
+            'img': '',
+            'name': 'Nikhil Bafna',
+            'position': 'Founder - Tipriyo'
+        },
+        {
+            'title': 'Efficient customer support',
+            'desc': 'He was recommended to me by a colleague for site development and design, and I can assure you that working with him would be beneficial. He is really imaginative and attentive to your needs, and suddenly presto—the job is done. He continued to communicate even after the project was turned over to see if anything needed to be changed and whether everything was going well. I endorse him. Bravo to you, friend 👍',
+            // 'img': '',
+            'name': 'Ravi',
+            'position': 'Prime Care Alliance'
+        },
+        {
+            'title': 'Efficient customer support',
+            'desc': 'As a startup, we needed a website that would impress investors and attract customers. siteScript not only met but exceeded our expectations.',
+            // 'img': '',
+            'name': 'Ravi',
+            'position': 'Unity Health System'
+        },
+    ]
 
     return (
         <div>
-            <section>
-                <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+            <section className='bg-cover' style={{
+                // backgroundImage: 'url()'
+            }}>
+                <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 backdrop-blur-sm">
                     <div className="flex flex-col w-full">
-                        <div className="flex flex-col w-full" aria-labelledby="carousel-label" role="region" tabIndex={0}>
-                            <h2 className='bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent text-center p-5 lg:text-[5vw] text-4xl font-[genica]'>
-                                Our Client's Love
-                            </h2>
-                            <h2 className="sr-only" id="carousel-label">Carousel</h2>
-                            <span className="sr-only" id="carousel-content-label">Carousel</span>
-                            <div className="inline-flex items-center space-x-2 lg:px-2">
-                                <button
-                                    className={`flex items-center text-white bg-[#0d2c5e] rounded-full hover:bg-[#489b9c] size-8 focus:bg-[#bae2e4] ${atBeginning ? 'opacity-50' : ''}`}
-                                    aria-disabled={atBeginning}
-                                    onClick={prev}
-                                    tabIndex={0}
-                                >
-                                    <span aria-hidden="true" className="mx-auto">←</span>
-                                    <span className="sr-only">Skip to previous slide page</span>
-                                </button>
-                                <button
-                                    className={`flex items-center text-white bg-[#0d2c5e] rounded-full hover:bg-[#489b9c] size-8 focus:bg-[#bae2e4] ${atEnd ? 'opacity-50' : ''}`}
-                                    aria-disabled={atEnd}
-                                    onClick={next}
-                                    tabIndex={0}
-                                >
-                                    <span aria-hidden="true" className="mx-auto">→</span>
-                                    <span className="sr-only">Skip to next slide page</span>
-                                </button>
-                            </div>
-                            <ul
-                                className="flex w-full gap-3 mt-4 overflow-x-scroll text-center scrollbar-hide snap-mandatory snap-x rounded-2xl"
-                                role="listbox"
-                                // aria-labelledby="carousel-content-label"
-                                tabIndex={0}
-                                ref={sliderRef}
-                                onScroll={handleScroll}
+                        <h2 className='text-center p-5 mb-5 lg:text-[5vw] text-4xl font-[genica]'>
+                            Our Client's
+                            <span className='circle-sketch-highlight'>
+                                Love
+                            </span>
+                        </h2>
+                            <img className='object-contain w-[%] h-[80vh]' src='Website_Images/testimonials.png' />
+                        <div className="flex flex- w-[100%] justify-center" aria-labelledby="carousel-label" role="region" tabIndex={0}>
+
+
+                            <div className='lg:w-[50%]'
                             >
-                                {testimonials.map((testimonial, index) => (
-                                    <li key={index} className="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option">
-                                        <figure className="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
-                                            <figcaption className="relative flex flex-col justify-between">
-                                                <img alt={testimonial.alt} src={testimonial.img} className="object-cover mx-auto rounded-full size-14 grayscale" />
-                                                <div className="mt-4">
-                                                    <div className="font-medium xl:text-[1.3vw] text-gray-900">{testimonial.name}</div>
-                                                    <div className="mt-1 xl:text-[1vw] text-gray-500">{testimonial.title}</div>
+                                <Slider {...settings} className=''>
+                                    {client.map((testimonial) => (
+
+
+                                        <div className=" h-full flex justify-center">
+                                            <div className=" mx-[1vw]">
+                                                <div className="md:h-[80vh] h-[40vh] flex-auto p-4 md:p-6">
+                                                    <p className="lg:text-[1.2vw] text-[4vw] text-justify text-black">
+                                                        " {testimonial.desc} "
+                                                    </p>
                                                 </div>
-                                            </figcaption>
-                                            <blockquote className="mt-4">
-                                                <p className="xl:text-[1vw] text-base font-medium text-gray-500">{testimonial.quote}</p>
-                                            </blockquote>
-                                        </figure>
-                                    </li>
-                                ))}
-                            </ul>
+                                                <div className="p-4  rounded-b-xl md:px-7 ">
+                                                    <div className="flex items-center">
+                                                        {/* <div className="flex-shrink-0"> */}
+                                                        {/* <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80" alt="testimonials Description" /> */}
+                                                        {/* </div> */}
+                                                        <div className="grow ms-3">
+                                                            <p className="text-sm sm:text-base text-black">
+                                                                {testimonial.name}                                                                            </p>
+                                                            <p className="text-xs text-[#FF9800]">
+                                                                {testimonial.position}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    ))}
+                                </Slider>
+                            </div>
                         </div>
                     </div>
                 </div>
