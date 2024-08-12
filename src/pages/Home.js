@@ -62,7 +62,7 @@ const HorizontalScrollCarousel = () => {
     const x = useTransform(
         scrollYProgress,
         [1, 0],
-        isMobile ? ["250%", "-90%"] : ["15%", "-90%"]
+        isMobile ? ["300%", "-90%"] : ["20%", "-90%"]
 
     );
 
@@ -71,14 +71,9 @@ const HorizontalScrollCarousel = () => {
     const scale = useTransform(
         scrollYProgress,
         [0, 1],
-        isMobile ? [1, 0.5] : [0.7, 1]);
+        isMobile ? [1, 0.5] : [0.8, 1]);
     // const opacity = useTransform(scrollYProgress, [0, 1], [0, 50])
 
-    const process = useTransform(
-        scrollYProgress,
-        [1, 0],
-        isMobile ? ["250%", "-90%"] : ["15%", "-90%"]
-    );
 
     return (
         <ParallaxProvider >
@@ -87,16 +82,18 @@ const HorizontalScrollCarousel = () => {
                 <div className='relative overflowhidden text-balance poppins-semibold bg-gradient-to- bgb from-[#1f2740] to-[#489b9c]'
 
                 >
-                    <div className='backdrop-blur-sm p-5'
+                    <div className='backdrop-blur-sm p-5 relative overflow-hidden'
 
                     >
-
+                        {/* <div> */}
 
                         <Navbar />
+                        {/* </div> */}
 
 
                         {/* Banner */}
-                        <motion.div className=" z-10 bg-cover rounded-3xl w-[100%] mx-auto"
+
+                        <motion.div className=" -z-10 bg-cover rounded-3xl w-[100%] mx-auto"
                             style={{
                                 backgroundImage: 'url(Website_Images/Audit.svg)',
                                 scale,
@@ -111,7 +108,7 @@ const HorizontalScrollCarousel = () => {
                                     {/* Title */}
                                     {/* <span className='circle-sketch-highlight'> */}
                                     {/* <div className="lg:max-w-5xl">
-                                    <h1 className="font-[genica] block text-white/90 text-[12vw] md:text-5xl xl:text-[6vw]">
+                                    <h1 className="poppins-semibold block text-white/90 text-[12vw] md:text-5xl xl:text-[6vw]">
                                         India’s
 
                                         <span className='bg-gradient-to-t  from-[#489b9c] from-[50%] to-[20%]  '>
@@ -173,7 +170,11 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
-                                                            className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-[#bae2e4] circle-sketch-highlight font-sans">99.95%</motion.p>
+                                                            className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
+                                                            <span className='bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
+                                                                99.95%
+                                                            </span>
+                                                        </motion.p>
                                                         <p className="mt-2 sm:mt-3 xl:text-[1.5vw] text-[5vw] text-white">in fulfilling orders</p>
                                                     </div>
                                                     <div>
@@ -182,7 +183,11 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
-                                                            className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-[#bae2e4] circle-sketch-highlight font-sans">2,000+</motion.p>
+                                                            className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
+                                                            <span className='bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
+                                                                2,000+
+                                                            </span>
+                                                        </motion.p>
                                                         <p className="mt-2 sm:mt-3 xl:text-[1.5vw] text-[5vw] text-white">partner with UpliftU</p>
                                                     </div>
                                                     <div>
@@ -191,7 +196,11 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
-                                                            className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-[#bae2e4] circle-sketch-highlight font-sans">85%</motion.p>
+                                                            className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
+                                                            <span className='bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
+                                                                85%
+                                                            </span>
+                                                        </motion.p>
                                                         <p className="mt-2 sm:mt-3 xl:text-[1.5vw] text-[5vw] text-white">this year alone</p>
                                                     </div>
                                                 </div>
@@ -224,7 +233,7 @@ const HorizontalScrollCarousel = () => {
                     <div className='bg-neutral- w-full poppins-semibold px-5 '
                     >
                         <div className='backdrop-blur-sm w-full py-24'>
-                            <h2 className='text-black/90  text-center p-5 lg:text-6xl text-4xl font-[genica]'>
+                            <h2 className='text-black/90  text-center p-5 lg:text-6xl text-4xl poppins-semibold'>
                                 <span className='bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%] '>
                                     Services
                                 </span>
@@ -247,7 +256,7 @@ const HorizontalScrollCarousel = () => {
                                                     // whileInView={{ opacity: 1, x: 0 }}
                                                     // transition={{ duration: 0.2, delay: index * 0.1 }}
                                                     >
-                                                        <Parallax className="bg-gradient-to-tr from-[#489b9c] to-black xl:h-[60vh] h-[30vh] overflow-hidden border rounded-3xl lg:flex items-center group bg-cover "
+                                                        <Parallax className="bg-gradient-to-tr from-[#489b9c] to-black xl:h-[60vh] h-[30vh] overflow-hidden border lg:flex items-center group bg-cover "
                                                             style={{
                                                                 backgroundImage: `url(${data.img})`,
                                                             }}
@@ -267,12 +276,16 @@ const HorizontalScrollCarousel = () => {
                                                             </p>
 
                                                         </div>
-                                                        <div className="mt-8 gap-3 flex justify-center">
-                                                            <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
-                                                                Get started now
-                                                                <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
-                                                            </a>
-                                                        </div>
+                                                        <MaskText text=
+
+                                                            <div className="mt-8 gap-3 flex justify-center">
+                                                                <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
+                                                                    Get started now
+                                                                    <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                                                                </a>
+                                                            </div>
+                                                        />
+
                                                     </motion.div>
                                                 )
                                             })}
@@ -282,10 +295,10 @@ const HorizontalScrollCarousel = () => {
                             </section>
 
 
-                            <h2 className='text-neutral-200 lg:text-[3vw] text-[6vw] text-center'>
+                            <h2 className=' lg:text-[3vw] text-[6vw] text-center'>
                                 <MaskText text="UpliftU is uplifting the businesses to the stratosphere!" />
                             </h2>
-                            <h2 className='text-[#bae2e4] lg:text-[1.5vw] text-center m-5'>
+                            <h2 className='text-[#489b9c] lg:text-[1.5vw] text-center m-5'>
                                 <MaskText text="Join the UpliftU Revolution, Make a change. Support the cause! Experience Beyond the marketing for engagement" />
                             </h2>
                         </div>
@@ -298,9 +311,9 @@ const HorizontalScrollCarousel = () => {
                             <div className=" lg:p-24 p-5 mx-auto poppins-semibold overflow-hidden space-y-[5vh] bg-fixed">
 
                                 <div>
-                                    <h1 className="font-[genica] lg:text-[4vw] text-4xl text-neutral-900 text-balance">
+                                    <h1 className="poppins-semibold lg:text-[4vw] text-4xl text-neutral-900 text-balance">
                                         Here the proecess
-                                        <span className="bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent">&nbsp;how we will work with you</span>
+                                        <span className="bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]">&nbsp;how we will work with you</span>
                                     </h1>
                                 </div>
                                 <div className="space-y-2">
@@ -311,11 +324,16 @@ const HorizontalScrollCarousel = () => {
 
                                             >
                                                 <div className="relative [h]- p-2 overflow-hidden rounded-3xl">
-                                                    <img src="Website_Images/Step 1.svg" className="object-contain mx-auto lg:h-[60vh] lg:w-[] border shadow-2xl rounded-2xl" />
+                                                    <img src="Website_Images/Step 1.svg" className="object-contain mx-auto lg:h-[50vh] lg:w-[] border shadow-2xl rounded-" />
                                                 </div>
                                             </Parallax>
                                         </div>
-                                        <div className="lg:w-[30%]">
+                                        <motion.div
+                                            initial={{ x: -200, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.9, delay: 0.5 }}
+
+                                            className="lg:w-[30%]">
                                             <Parallax
                                                 opacity={['1', '0']}
 
@@ -329,7 +347,7 @@ const HorizontalScrollCarousel = () => {
                                                     </p>
                                                 </div>
                                             </Parallax>
-                                        </div>
+                                        </motion.div>
 
                                     </div>
                                     <div className=" gap-2 lg:mx-auto lg:flex">
@@ -340,11 +358,14 @@ const HorizontalScrollCarousel = () => {
 
                                             >
                                                 <div className="relative h-[full] p-2 overflow-hidden  rounded-3xl">
-                                                    <img src="Website_Images/Step 2.svg" className="object-contain mx-auto lg:h-[60vh] lg:w-[] border shadow-2xl rounded-2xl" />
+                                                    <img src="Website_Images/Step 2.svg" className="object-contain mx-auto lg:h-[50vh] lg:w-[] border shadow-2xl rounded-" />
                                                 </div>
                                             </Parallax>
                                         </div>
-                                        <div className="lg:w-[30%]">
+                                        <motion.div
+                                            initial={{ x: 200, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.9, delay: 0.5 }} className="lg:w-[30%]">
                                             <Parallax
                                                 opacity={['1', '0']}
                                                 className="flex h-full">
@@ -355,7 +376,7 @@ const HorizontalScrollCarousel = () => {
                                                     </p>
                                                 </div>
                                             </Parallax>
-                                        </div>
+                                        </motion.div>
                                     </div>
                                     <div className=" gap-2 flex-row-reverse lg:mx-auto lg:flex">
 
@@ -364,11 +385,14 @@ const HorizontalScrollCarousel = () => {
                                                 translateX={['100', '-100']}
                                             >
                                                 <div className="relative h-[full] p-2 overflow-hidden rounded-3xl">
-                                                    <img src="Website_Images/Step 3.svg" className="object-contain mx-auto lg:h-[60vh] lg:w-[] border shadow-2xl rounded-2xl" />
+                                                    <img src="Website_Images/Step 3.svg" className="object-contain mx-auto lg:h-[50vh] lg:w-[] border shadow-2xl rounded-" />
                                                 </div>
                                             </Parallax>
                                         </div>
-                                        <div className="lg:w-[30%]">
+                                        <motion.div
+                                            initial={{ x: -200, opacity: 0 }}
+                                            whileInView={{ x: 0, opacity: 1 }}
+                                            transition={{ duration: 0.9, delay: 0.5 }} className="lg:w-[30%]">
                                             <Parallax
                                                 opacity={['1', '0']}
                                                 className="flex h-full">
@@ -381,7 +405,7 @@ const HorizontalScrollCarousel = () => {
                                                     </p>
                                                 </div>
                                             </Parallax>
-                                        </div>
+                                        </motion.div>
                                     </div>
 
                                 </div>
@@ -524,7 +548,7 @@ const HorizontalScrollCarousel = () => {
 
                         </Parallax>
                         <MaskText text=
-                            <h1 className="font-[genica] pb-10 z-10 block text-black/90 text-[10vw] md:text-5xl lg:text-[5vw]">
+                            <h1 className="poppins-semibold pb-10 z-10 block text-black/90 text-[10vw] md:text-5xl lg:text-[5vw]">
                                 Difficulties Faced On
                                 <span className="z-10 bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]">&nbsp;Social Media</span>
                             </h1>
@@ -540,7 +564,7 @@ const HorizontalScrollCarousel = () => {
                                             opacity={['1', '0']}
 
                                             className='-amber-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
-                                            <div className='text-[#bae2e4]'>❖</div>
+                                            <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt
                                                     className="mt-4 text-black font-light  xl:text-[1.2vw]">
@@ -554,7 +578,7 @@ const HorizontalScrollCarousel = () => {
                                             translateY={['0', '-100']}
                                             opacity={['1', '0']}
                                             className='-blue-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
-                                            <div className='text-[#bae2e4]'>❖</div>
+                                            <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt className="mt-4 text-black font-light xl:text-[1.2vw]">
                                                     In-house teams lack the creativity to produce engaging videos.                                        </dt>
@@ -564,7 +588,7 @@ const HorizontalScrollCarousel = () => {
                                             translateY={['0', '-100']}
                                             opacity={['1', '0']}
                                             className='-lime-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
-                                            <div className='text-[#bae2e4]'>❖</div>
+                                            <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt className="mt-4 text-black font-light xl:text-[1.2vw]">Wasting money on boosting reels that hurt your reach (algorithm!).</dt>
                                             />
@@ -573,7 +597,7 @@ const HorizontalScrollCarousel = () => {
                                             translateY={['0', '-100']}
                                             opacity={['1', '0']}
                                             className='-red-400 lg:h-[30vh] h-[35vh] p-2 rounded-xl'>
-                                            <div className='text-[#bae2e4]'>❖</div>
+                                            <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt className="mt-4 text-black font-light xl:text-[1.2vw]">
                                                     Relying solely on posts that don't spark conversation or action.
@@ -585,12 +609,12 @@ const HorizontalScrollCarousel = () => {
                                 <div
                                     translateY={['0', '-100']} className="order-first block mt-12 aspect-square lg:mt-0 items-center">
                                     <Parallax
-                                        translateY={['80', '-100']}
-                                        // translateX={['80', '-100']}
+                                        translateY={['-80', '100']}
+                                        // translateX={['-80', '100']}
                                         // scaleX={['1', '2']}
                                         // scaleY={['1', '2']}
                                         className="p-2 overflow-hidden sh-lg items-center rounded-3xl">
-                                        <img alt="#_" className="xl:w-[30vw] relative ro-2xl drop--2xl " src="Website_Images/36-a-visual-of-a-microphone-rising-from-a-small-house-representing-a-hospitality-brand-surrounded-by-.jpeg" />
+                                        <img alt="#_" className="xl:w-[25vw] mx-auto relative ro-2xl drop--2xl " src="Website_Images/36-a-visual-of-a-microphone-rising-from-a-small-house-representing-a-hospitality-brand-surrounded-by-.jpeg" />
                                     </Parallax>
                                 </div>
                             </div>
@@ -606,48 +630,64 @@ const HorizontalScrollCarousel = () => {
 
 
                     {/* About  */}
-                    <section className="relative flex items-center justify-center text-[#f3f7f8] bg-neutral-900">
+                    <section className="relative flex items-center justify-center text-[#] bg-neutral-">
                         <div className="relative items-center w-full px-5 pt-24 mx-auto max-w-7xl lg:px-16 lg:py- md:px-12">
                             <div>
                                 <div className="relative text-center">
-                                    <h1 className="text-center p-5 lg:text-[3vw] text-4xl">
-                                        Who are the CEO's<span className="">&nbsp;behind the Business?</span>
-                                    </h1>
+                                    <MaskText text=
+                                        <h1 className="text-center p-5 lg:text-[3vw] text-4xl">
+                                            Who are the CEO's<span className="">&nbsp;behind the Business?</span>
+                                        </h1>
+                                    />
 
                                     <div className='py-'>
-                                        <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent font-[genica]">
-                                            The Story of Naineesh & Anmol
-                                        </h2>
-                                        <p className="xl:text-[1.5vw] lg:text-center text-justify mx-auto mt-4 font-light">
-                                            With over 5+ years of total experience in Sales, Marketing and Social Media, Naineesh & Anmol have a big mission: Revolutionalized hospitality industry by making them orginals creators over social media sand not over rely on influencers!
-                                        </p>
+                                        <MaskText text=
+                                            <h2 className="text-center p-5 lg:text-[2.5vw] text-4xl font-bold poppins-semibold">
+                                                <span className='bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
+                                                    The Story of Naineesh & Anmol
+                                                </span>
+                                            </h2>
+                                        />
+                                        <MaskText text=
+                                            <p className="xl:text-[1.5vw] lg:text-center text-justify mx-auto mt-4 font-light">
+                                                With over 5+ years of total experience in Sales, Marketing and Social Media, Naineesh & Anmol have a big mission: Revolutionalized hospitality industry by making them orginals creators over social media sand not over rely on influencers!
+                                            </p>
+                                        />
                                     </div>
                                 </div>
                             </div>
-                            <div className="mt-0 py-10 gap-3 flex justify-center">
-                                <a className="py-3 px-4 inline-flex items-center gap-x-2 text-base font-bold border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="/about">
-                                    Know More
-                                    <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
-                                </a>
-                            </div>
+                            <MaskText text=
+                                <div className="mt-0 py-10 gap-3 flex justify-center">
+                                    <a className="py-3 px-4 inline-flex items-center gap-x-2 text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="/about">
+                                        Know More
+                                        <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                                    </a>
+                                </div>
+                            />
                             <div className=" items-center w-full xl:pt-12 mx-auto xl:mt-12 ">
-                                <svg fill="none" viewBox="0 0 400 400" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="absolute -mt-24 blur-3xl">
-                                    <g clipPath="url(#clip0_10_20)">
-                                        <g filter="url(#filter0_f_10_20)">
+                                {/* <svg fill="none" viewBox="0 0 400 400" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="absolute -mt-24 blur-3xl"> */}
+                                {/* <g clipPath="url(#clip0_10_20)"> */}
+                                {/* <g filter="url(#filter0_f_10_20)">
                                             <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#ff237d" />
                                             <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#7C87F8" />
                                             <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#4C65E4" />
                                             <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#043AFF" />
-                                        </g>
-                                    </g>
-                                    <defs>
-                                        <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="720.666" id="filter0_f_10_20" width="720.666" x="-160.333" y="-160.333">
-                                            {/* <feFlood floodOpacity={0} result="BackgroundImageFix" />
+                                        </g> */}
+                                {/* </g> */}
+                                {/* <defs> */}
+                                {/* <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="720.666" id="filter0_f_10_20" width="720.666" x="-160.333" y="-160.333"> */}
+                                {/* <feFlood floodOpacity={0} result="BackgroundImageFix" />
                   <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
                   <feGaussianBlur result="effect1_foregroundBlur_10_20" stdDeviation="80.1666" /> */}
-                                        </filter>
-                                    </defs></svg><img src='images/Naineesh-Photoroom.png' alt="CEO's" className=" object-cover xl:w-[50vw] backdrop-brightness-90 mx-auto" />
-
+                                {/* </filter> */}
+                                {/* </defs></svg> */}
+                                <div
+                                    translateY={['-100', '80']} className="block overflow-hidden lg:mt-0 items-center">
+                                    <Parallax
+                                        translateY={['-80', '80']}>
+                                        <img className='object-cover xl:w-[50vw] mx-auto' src='/images/Naineesh-Anmol.png' />
+                                    </Parallax>
+                                </div>
                             </div>
                         </div>
                     </section>

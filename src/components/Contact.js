@@ -8,8 +8,8 @@ const Contact = () => {
                 <div className="px-4 xl:px-[10vw] py-10 lg:py-20 mx-auto">
                     {/* Title */}
                     <div className="max-w-3xl mb-10 lg:mb-14">
-                        <h2 className="font-[genica] bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent text-[10vw] md:text-5xl lg:text-7xl">Contact us</h2>
-                        <p className="mt-1 text-[#f3f7f8] font-semibold">Whatever your goal - we will get you there.</p>
+                        <h2 className="poppins-semibold bg-gradient-to-l from-[#489b9c] to-[#bae2e4] bg-clip-text text-transparent text-[10vw] md:text-5xl lg:text-7xl">Contact us</h2>
+                        <p className="mt-1 text-[#f3f7f8] font-light">Whatever your goal - we will get you there.</p>
                     </div>
                     {/* End Title */}
                     {/* Grid */}
@@ -113,7 +113,7 @@ const Contact = () => {
                                         All fields are required
                                     </p>
                                     <p className="mt-5">
-                                        <a className="group inline-flex items-center gap-x-2 py-2 px-3  border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] font-medium  text-white focus:outline-none" href="#">
+                                        <a className="group inline-flex items-center gap-x-2 py-2 px-3  border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] font-light  text-white focus:outline-none" href="#">
                                             Submit
                                             <svg className="shrink-0 size-4 transition group-hover:translate-x-0.5 group-hover:translate-x-0 group-focus:translate-x-0.5 group-focus:translate-x-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                                         </a>
@@ -128,7 +128,7 @@ const Contact = () => {
                                 <svg className="shrink-0 size-6 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx={12} cy={10} r={3} /></svg>
                                 <div className="grow">
                                     <h4 className="text-white font-semibold">Our address:</h4>
-                                    <address className="mt-1 text-neutral-400  not-italic">
+                                    <address className="mt-1 text-neutral-400  not-italic font-light">
                                         Mumbai | Pune | Navi Mumbai<br />
                                     </address>
                                 </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                                 <svg className="shrink-0 size-6 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" /><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" /></svg>
                                 <div className="grow">
                                     <h4 className="text-white font-semibold">Email us:</h4>
-                                    <a className="mt-1 text-neutral-400  hover:text-neutral-200 focus:outline-none focus:text-neutral-200" href="#mailto:marketing@upliftu.in" target="_blank">
+                                    <a className="mt-1 text-neutral-400  hover:text-neutral-200 focus:outline-none focus:text-neutral-200 font-light" href="#mailto:marketing@upliftu.in" target="_blank">
                                         marketing@upliftu.in
                                     </a>
                                 </div>
@@ -150,7 +150,7 @@ const Contact = () => {
                                 <svg className="shrink-0 size-6 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" /><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" /></svg>
                                 <div className="grow">
                                     <h4 className="text-white font-semibold">Call us:</h4>
-                                    <a className="mt-1 text-neutral-400  hover:text-neutral-200 focus:outline-none focus:text-neutral-200" target="_blank">
+                                    <a className="mt-1 text-neutral-400  hover:text-neutral-200 focus:outline-none focus:text-neutral-200 font-light" target="_blank">
                                         +91-7208409350
                                         <br />+91-7506043703
                                     </a>
@@ -162,7 +162,7 @@ const Contact = () => {
                                 <svg className="shrink-0 size-6 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="m3 11 18-5v12L3 14v-3z" /><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" /></svg>
                                 <div className="grow">
                                     <h4 className="text-white font-semibold">We're hiring</h4>
-                                    <p className="mt-1 text-neutral-400">We're thrilled to announce that we're expanding our team and looking for talented individuals like you to join us.</p>
+                                    <p className="mt-1 text-neutral-400 font-light">We're thrilled to announce that we're expanding our team and looking for talented individuals like you to join us.</p>
                                     <p className="mt-2">
                                         <a className="group inline-flex items-center gap-x-2 font-medium  text-[#bae2e4] decoration-2 hover:underline focus:outline-none focus:underline" href="#">
                                             Job openings

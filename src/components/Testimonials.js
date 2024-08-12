@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { motion } from 'framer-motion';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 const Testimonials = () => {
     const settings = {
@@ -75,59 +76,77 @@ const Testimonials = () => {
             <section className='bg-cover' style={{
                 // backgroundImage: 'url()'
             }}>
-                <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 backdrop-blur-sm">
-                    <div className="flex flex-col w-full">
-                        <h2 className='text-center p-5 mb-5 lg:text-[5vw] text-4xl font-[genica]'>
-                            Our Client's
-                            <span className='circle-sketch-highlight'>
-                                Love
-                            </span>
-                        </h2>
-                            <img className='object-contain w-[%] h-[80vh]' src='Website_Images/testimonials.png' />
-                        <div className="flex flex- w-[100%] justify-center" aria-labelledby="carousel-label" role="region" tabIndex={0}>
+                <ParallaxProvider>
+                    <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 backdrop-blur-sm overflow-hidden">
+                        <div className="flex flex-col w-full h-screen">
+                            <h2 className='text-center p-5 mb-5 lg:text-[5vw] text-4xl font-[]'>
+                                Our Client's
+                                <span className='circle-sketch-highlight'>
+                                    Love
+                                </span>
+                            </h2>
+                            <div className="xl:flex w-[100%] justify-center" aria-labelledby="carousel-label" role="region" tabIndex={0}>
+
+                                <div
+                                    translateY={['-100', '80']} className="block lg:mt-0 items-center">
+                                    <Parallax
+                                        translateY={['-80', '80']}
+                                        opacity={['2', '0']}
+                                        >
+                                        <img className='object-cover w-[100%]' src='Website_Images/testimonials.png' />
+                                    </Parallax>
+                                </div>
+
+                                <div className='lg:w-[50%] '
+                                >
+                                    <Slider {...settings} className=''>
+                                        {client.map((testimonial) => (
 
 
-                            <div className='lg:w-[50%]'
-                            >
-                                <Slider {...settings} className=''>
-                                    {client.map((testimonial) => (
+                                            <Parallax
+                                                translateY={['100', '-80']}
+                                                opacity={['2', '0']}
+                                                className="flex justify-center h-fit my-auto">
+                                                <motion.div
+                                                    initial={{ x: 200, opacity: 0 }}
+                                                    whileInView={{ x: 0, opacity: 1 }}
+                                                    transition={{ duration: 0.9, delay: 0.5 }}
 
-
-                                        <div className=" h-full flex justify-center">
-                                            <div className=" mx-[1vw]">
-                                                <div className="md:h-[80vh] h-[40vh] flex-auto p-4 md:p-6">
-                                                    <p className="lg:text-[1.2vw] text-[4vw] text-justify text-black">
-                                                        " {testimonial.desc} "
-                                                    </p>
-                                                </div>
-                                                <div className="p-4  rounded-b-xl md:px-7 ">
-                                                    <div className="flex items-center">
-                                                        {/* <div className="flex-shrink-0"> */}
-                                                        {/* <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80" alt="testimonials Description" /> */}
-                                                        {/* </div> */}
-                                                        <div className="grow ms-3">
-                                                            <p className="text-sm sm:text-base text-black">
-                                                                {testimonial.name}                                                                            </p>
-                                                            <p className="text-xs text-[#FF9800]">
-                                                                {testimonial.position}
-                                                            </p>
+                                                    className=" mx-[1vw] font-light">
+                                                    <div className="xl:h-[40vh] p-4 md:p-6">
+                                                        <p className="lg:text-[1.2vw] text-[4vw] text-justify text-black">
+                                                            " {testimonial.desc} "
+                                                        </p>
+                                                    </div>
+                                                    <div className="p-4  rounded-b-xl md:px-7 ">
+                                                        <div className="flex items-center">
+                                                            {/* <div className="flex-shrink-0"> */}
+                                                            {/* <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80" alt="testimonials Description" /> */}
+                                                            {/* </div> */}
+                                                            <div className="grow ms-3">
+                                                                <p className="text-sm sm:text-base text-black ">
+                                                                    {testimonial.name}                                                                            </p>
+                                                                <p className="text-sm text-[#FF9800]">
+                                                                    {testimonial.position}
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                </motion.div>
+                                            </Parallax>
 
 
 
 
-                                    ))}
-                                </Slider>
+                                        ))}
+                                    </Slider>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </ParallaxProvider>
             </section>
-        </div>
+        </div >
     );
 };
 

@@ -41,9 +41,9 @@ const OurResults = () => {
                     <div className="my-[5vh] mx-auto poppins-semibold"
                     >
                         <div>
-                            <h1 className="font-[genica] lg:text-[5vw] text-4xl text-neutral-900 text-balance" >
+                            <h1 className="poppins-semibold lg:text-[5vw] text-4xl text-neutral-900 text-balance" >
                                 Our
-                                <span className="bg-gradient-to-l from-[#0d2c5e] to-[#489b9c] bg-clip-text text-transparent">&nbsp;Results</span>
+                                <span className="bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]">&nbsp;Results</span>
                             </h1>
                         </div>
 
