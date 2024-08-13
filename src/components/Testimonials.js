@@ -73,13 +73,16 @@ const Testimonials = () => {
 
     return (
         <div>
-            <section className='bg-cover' style={{
-                // backgroundImage: 'url()'
-            }}>
+            <section className='bg-cover text-white' style={{
+                            backgroundImage: 'url(Website_Images/testimonials.png)'
+                        }}>
                 <ParallaxProvider>
-                    <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 backdrop-blur-sm overflow-hidden">
-                        <div className="flex flex-col w-full h-screen">
-                            <h2 className='text-center p-5 mb-5 lg:text-[5vw] text-4xl font-[]'>
+                    <div className="px-8 py-24 mx-auto md:px-12 lg:px-0 backdrop-blur-d overflow-hidden h-screen">
+                        <div className="flex flex-col w-full h-full bg-cover"
+                        
+                        >
+                        {/* <img className='object-cover h-scree w-auto aspect-square' src='Website_Images/testimonials.png' /> */}
+                            <h2 className='text-center p-5 mb-5 lg:text-[5vw] text-4xl archivo-black-regular '>
                                 Our Client's
                                 <span className='circle-sketch-highlight'>
                                     Love
@@ -87,15 +90,15 @@ const Testimonials = () => {
                             </h2>
                             <div className="xl:flex w-[100%] justify-center" aria-labelledby="carousel-label" role="region" tabIndex={0}>
 
-                                <div
+                                {/* <div
                                     translateY={['-100', '80']} className="block lg:mt-0 items-center">
                                     <Parallax
-                                        translateY={['-80', '80']}
+                                        // translateY={['-80', '80']}
                                         opacity={['2', '0']}
-                                        >
-                                        <img className='object-cover w-[100%]' src='Website_Images/testimonials.png' />
+                                    >
+                                        
                                     </Parallax>
-                                </div>
+                                </div> */}
 
                                 <div className='lg:w-[50%] '
                                 >
@@ -104,17 +107,17 @@ const Testimonials = () => {
 
 
                                             <Parallax
-                                                translateY={['100', '-80']}
+                                                translateY={['100', '-10']}
                                                 opacity={['2', '0']}
-                                                className="flex justify-center h-fit my-auto">
+                                                className=" my-auto backdrop-blur-xl">
                                                 <motion.div
                                                     initial={{ x: 200, opacity: 0 }}
                                                     whileInView={{ x: 0, opacity: 1 }}
                                                     transition={{ duration: 0.9, delay: 0.5 }}
 
-                                                    className=" mx-[1vw] font-light">
-                                                    <div className="xl:h-[40vh] p-4 md:p-6">
-                                                        <p className="lg:text-[1.2vw] text-[4vw] text-justify text-black">
+                                                    className=" mx-[1vw] font-ght ">
+                                                    <div className="p-4 md:p-6">
+                                                        <p className="lg:text-[1.2vw] text-[4vw] text-justify">
                                                             " {testimonial.desc} "
                                                         </p>
                                                     </div>
@@ -124,9 +127,9 @@ const Testimonials = () => {
                                                             {/* <img className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80" alt="testimonials Description" /> */}
                                                             {/* </div> */}
                                                             <div className="grow ms-3">
-                                                                <p className="text-sm sm:text-base text-black ">
+                                                                <p className="text-sm sm:text-base ">
                                                                     {testimonial.name}                                                                            </p>
-                                                                <p className="text-sm text-[#FF9800]">
+                                                                <p className=" text-[#489b9c]">
                                                                     {testimonial.position}
                                                                 </p>
                                                             </div>

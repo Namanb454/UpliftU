@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className='relative z-10 '>
             <ParallaxProvider>
                 <Parallax>
-                    <div className='poppins-extrabold overflow-hidden items-center'>
+                    <div className='font-[ocean] overflow-hidden items-center'>
                         <nav className="scroll-smooth flex lg:py-[2vh] py-2 md:space-x-10 px-[5vw] shadow-black shadow-sm">
                             <div className="flex-1 w-fit md:h-auto h-[5vh]">
                                 <div className="text-[#489b9c] w-fit rounded-md">
