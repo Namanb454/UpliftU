@@ -73,7 +73,7 @@ const Testimonials = () => {
 
     return (
         <div>
-            <section className='bg-cover text-white' style={{
+            <section className='bg-cover  text-white' style={{
                             backgroundImage: 'url(Website_Images/testimonials.png)'
                         }}>
                 <ParallaxProvider>
@@ -107,7 +107,7 @@ const Testimonials = () => {
 
 
                                             <Parallax
-                                                translateY={['100', '-10']}
+                                                // translateY={['100', '-10']}
                                                 opacity={['2', '0']}
                                                 className=" my-auto backdrop-blur-xl">
                                                 <motion.div

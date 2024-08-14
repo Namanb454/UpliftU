@@ -88,7 +88,7 @@ const HorizontalScrollCarousel = () => {
     const x = useTransform(
         scrollYProgress,
         [1, 0],
-        isMobile ? ["300%", "-90%"] : ["100%", "-70%"]
+        isMobile ? ["350%", "-90%"] : ["100%", "-70%"]
 
     );
 
@@ -145,7 +145,7 @@ const HorizontalScrollCarousel = () => {
                                             </div>
                                         </section>
 
-                                        <div className="mt-8 gap-3 mx-auto w-fit block xl:hidden">
+                                        {/* <div className="mt-8 gap-3 mx-auto w-fit block xl:hidden">
                                             <motion.a
                                                 initial={{ x: 20, opacity: 0 }}
                                                 whileInView={{ x: 0, opacity: 1 }}
@@ -154,7 +154,7 @@ const HorizontalScrollCarousel = () => {
                                                 Get started now
                                                 <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                             </motion.a>
-                                        </div>
+                                        </div> */}
 
 
                                         <div className="xl:w- mx-auto sticky top-1 flex h-fit overflow-hidden text-left md:leading-none  text-[#d3ff8c] lg:text-[6vw] text-[8vw] font-[]">
@@ -169,6 +169,7 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
+                                                            viewport={{once: true}}
                                                             className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
                                                             <span className='archivo-black-regular bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
                                                                 99.95%
@@ -182,6 +183,7 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
+                                                            viewport={{once: true}}
                                                             className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
                                                             <span className='archivo-black-regular bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
                                                                 2,000+
@@ -195,6 +197,7 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
+                                                            viewport={{once: true}}
                                                             className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
                                                             <span className='archivo-black-regular bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
                                                                 85%
@@ -207,12 +210,13 @@ const HorizontalScrollCarousel = () => {
                                             </div>
                                         </div>
 
-                                        <div className="mt-8 gap-3 mx-auto w-fit xl:block hidden">
+                                        <div className="mt-8 gap-3 mx-auto w-fit">
                                             <motion.a
                                                 initial={{ y: 40, opacity: 0 }}
                                                 whileInView={{ y: 0, opacity: 1 }}
                                                 transition={{ duration: 0.5, delay: 0.3 }}
-                                                className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
+                                                viewport={{once: true}}
+                                                className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-black bg-[#489b9c] text-white hover:bg-black/50 disabled:opacity-50 disabled:pointer-events-none" href="#contact">
                                                 Get started now
                                                 <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                             </motion.a>
@@ -260,7 +264,7 @@ const HorizontalScrollCarousel = () => {
                                             {services.map((data, index) => {
                                                 return (
 
-                                                    <motion.div
+                                                    <a href='/services'
                                                         // initial={{ opacity: 0, x: -500 }}
                                                         // whileInView={{ opacity: 1, x: 0 }}
                                                         // transition={{ duration: 0.2, delay: index * 0.1 }}
@@ -286,14 +290,14 @@ const HorizontalScrollCarousel = () => {
                                                         <MaskText text=
 
                                                             <div className="mt-8 gap-3 flex justify-center">
-                                                                <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="#contact">
+                                                                <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-black bg-[#489b9c] text-white hover:bg-black disabled:opacity-50 disabled:pointer-events-none" href="/contact">
                                                                     Get started now
                                                                     <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                                                 </a>
                                                             </div>
                                                         />
 
-                                                    </motion.div>
+                                                    </a>
                                                 )
                                             })}
                                         </div>
@@ -346,7 +350,7 @@ const HorizontalScrollCarousel = () => {
                             <div className=" lg:p-24 p-5 mx-auto poppins-semibold overflow-hidden space-y-[5vh] bg-fixed">
 
                                 <div>
-                                    <h1 className="archivo-black-regular leading-[8vh] lg:text-[4vw] h-[20vh] text-4xl text-neutral-900">
+                                    <h1 className="archivo-black-regular xl:leading-[8vh] lg:text-[4vw] h-[20vh] text-4xl text-neutral-900">
                                         Here the process
                                         <span className=" bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]">&nbsp;how we will work with you</span>
                                     </h1>
@@ -367,6 +371,7 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ x: -200, opacity: 0 }}
                                             whileInView={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.9, delay: 0.5 }}
+                                            viewport={{once: true}}
 
                                             className="lg:w-[30%]">
                                             <Parallax
@@ -400,7 +405,9 @@ const HorizontalScrollCarousel = () => {
                                         <motion.div
                                             initial={{ x: 200, opacity: 0 }}
                                             whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: 0.9, delay: 0.5 }} className="lg:w-[30%]">
+                                            transition={{ duration: 0.9, delay: 0.5 }}
+                                            viewport={{once: true}}
+                                             className="lg:w-[30%]">
                                             <Parallax
                                                 opacity={['1', '0']}
                                                 className="flex h-full">
@@ -427,7 +434,9 @@ const HorizontalScrollCarousel = () => {
                                         <motion.div
                                             initial={{ x: -200, opacity: 0 }}
                                             whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: 0.9, delay: 0.5 }} className="lg:w-[30%]">
+                                            transition={{ duration: 0.9, delay: 0.5 }} 
+                                            viewport={{once: true}}
+                                            className="lg:w-[30%]">
                                             <Parallax
                                                 opacity={['1', '0']}
                                                 className="flex h-full">
@@ -572,7 +581,7 @@ const HorizontalScrollCarousel = () => {
                     {/* Difficulties */}
                     <Parallax
                         opacity={['0', '3']}
-                        className='relative lg:px-24 py-24 px-5 mx-auto poppins-semibold overflow-hidden'>
+                        className='relative lg:px-24 xl:py-24 py-12 px-5 mx-auto poppins-semibold overflow-hidden'>
                         <Parallax
                             scale={['0', '4']}
                             // translateX={['-100', '100']}
@@ -583,9 +592,9 @@ const HorizontalScrollCarousel = () => {
 
                         </Parallax>
                         <MaskText text=
-                            <h1 className="archivo-black-regular leading-[8vh] pb-10 z-10 block text-black/90 text-[10vw] md:text-5xl lg:text-[5vw]">
-                                Difficulties Faced On
-                                <span className="z-10 bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]">&nbsp;Social Media</span>
+                            <h1 className="archivo-black-regular leading-[8vh] xl:pb-10 z-10 block text-black/90 text-[10vw] md:text-5xl lg:text-[5vw]">
+                                Difficulties Faced On &nbsp;
+                                <span className="z-10 bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]">Social Media</span>
                             </h1>
                         />
                         <Parallax
@@ -593,15 +602,16 @@ const HorizontalScrollCarousel = () => {
                             className="mx-auto text-balance">
                             <div className=" grid lg:space-x-10 grid-cols-1 lg:grid-cols-2">
                                 <div className="md:order-first items-center justify-center ">
-                                    <dl className="grid grid-cols-2 gap-4 list-none lg:gap-6 lg:mt-0 mt-5 items-center ">
+                                    <dl className="grid xl:grid-cols-2 xl:text-left text-center gap- list-none lg:gap-6 lg:mt-0 mt-5 items-center ">
                                         <motion.div
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.1 }}
+                                            viewport={{once: true}}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
 
-                                            className='-amber-400 lg:h-fit h-[35vh] p-2 rounded-xl'>
+                                            className='-amber-400 lg:h-fit  p-2 rounded-xl'>
                                             <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt
@@ -616,9 +626,10 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.2 }}
+                                            viewport={{once: true}}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
-                                            className='-blue-400 lg:h-fit h-[35vh] p-2 rounded-xl'>
+                                            className='-blue-400 lg:h-fit  p-2 rounded-xl'>
                                             <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt className="mt-4 text-black font-light xl:text-[1.2vw]">
@@ -629,9 +640,10 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.3 }}
+                                            viewport={{once: true}}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
-                                            className='-lime-400 lg:h-fit h-[35vh] p-2 rounded-xl'>
+                                            className='-lime-400 lg:h-fit  p-2 rounded-xl'>
                                             <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt className="mt-4 text-black font-light xl:text-[1.2vw]">Wasting money on boosting reels that hurt your reach (algorithm!).</dt>
@@ -641,9 +653,10 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.4 }}
+                                            viewport={{once: true}}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
-                                            className='-red-400 lg:h-fit h-[35vh] p-2 rounded-xl'>
+                                            className='-red-400 lg:h-fit p-2 rounded-xl'>
                                             <div className='text-[#489b9c]'>❖</div>
                                             <MaskText text=
                                                 <dt className="mt-4 text-black font-light xl:text-[1.2vw]">
@@ -660,8 +673,8 @@ const HorizontalScrollCarousel = () => {
                                         // translateX={['-80', '100']}
                                         // scaleX={['1', '2']}
                                         // scaleY={['1', '2']}
-                                        className="p-2 overflow-hidden sh-lg items-center rounded-3xl">
-                                        <img alt="#_" className="xl:w-[25vw] mx-auto relative ro-2xl drop--2xl " src="Website_Images/36-a-visual-of-a-microphone-rising-from-a-small-house-representing-a-hospitality-brand-surrounded-by-.jpeg" />
+                                        className="p-2 sh-lg items-center rounded-3xl">
+                                        <img alt="#_" className="xl:w-[25vw] mx-auto relative ro-2xl drop--2xl " src="Website_Images/difficulties.jpeg" />
                                     </Parallax>
                                 </div>
                             </div>
@@ -705,7 +718,7 @@ const HorizontalScrollCarousel = () => {
                             </div>
                             <MaskText text=
                                 <div className="mt-0 py-10 gap-3 flex justify-center">
-                                    <a className="py-3 px-4 inline-flex items-center gap-x-2 text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="/about">
+                                    <a className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-[#0d2c5e] bg-[#489b9c] text-white hover:bg-[#0d2c5e] disabled:opacity-50 disabled:pointer-events-none" href="/about">
                                         Know More
                                         <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                                     </a>

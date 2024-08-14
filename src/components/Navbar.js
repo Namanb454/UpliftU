@@ -22,6 +22,7 @@ const Navbar = () => {
     })
 
     const navbar = [
+        { 'id': '1', 'nav': 'Home', 'link': '/' },
         { 'id': '1', 'nav': 'About Us', 'link': '/about' },
         { 'id': '2', 'nav': 'Services', 'link': '/services' },
         { 'id': '3', 'nav': 'Our Work', 'link': '/our-work' },
@@ -35,26 +36,26 @@ const Navbar = () => {
             <ParallaxProvider>
                 <Parallax>
                     <div className='font-[ocean] overflow-hidden items-center'>
-                        <nav className="scroll-smooth flex lg:py-[2vh] py-2 md:space-x-10 px-[5vw] shadow-black shadow-sm">
+                        <nav className="scroll-smooth flex lg:py-[0vh] py-2 md:space-x-10 px-[5vw] shadow-black shadow-sm">
                             <div className="flex-1 w-fit md:h-auto h-[5vh]">
                                 <div className="text-[#489b9c] w-fit rounded-md">
                                     <a href='/' className='flex w-fit' aria-label="Home">
-                                        <img className="lg:w-[10vw] w-[15vw] items-center" src="images/UpliftU_Hospitality .svg" alt="Logo" />
+                                        <img className="lg:w-[10vw] w-[10vw] items-center" src="images/UpliftU_Hospitality .svg" alt="Logo" />
                                         {/* <h2 className='lg:text-[2vw] md:text-[2vw] text-[5vw] '>Uplift-U</h2> */}
                                     </a>
 
                                 </div>
                             </div>
 
-                            <div className="items-center justify-end w-fit">
-                                <button onClick={() => setIsOpen(!isOpen)} className={`items-center w-fit p-2 rounded-md focus:outline-none`}>
+                            <div className="items-center flex w-fit">
+                                <button onClick={() => setIsOpen(!isOpen)} className={`items-center w-fit p-2 bg-k textwhite rounded-md focus:outline-none`}>
                                     {isOpen ?
                                         <motion.svg
                                             initial={{ scale: 0 }}
                                             whileInView={{ scale: 1 }}
                                             whileTap={{ scale: 0 }}
                                             transform={{ duration: 0.5 }}
-                                            className="h-0 w-0 block text- items-center"
+                                            className="xl:w-[4vw] items-center bg-white"
                                             viewBox="0 0 0 0"
                                             fill="none"
                                             stroke="currentColor"
@@ -71,7 +72,7 @@ const Navbar = () => {
                                             whileInView={{ scale: 1 }}
                                             whileTap={{ scale: 0 }}
                                             transform={{ duration: 0.5 }}
-                                            className="block h-12 w-6 items-center textwh" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            className="justify-center xl:w-[4vw] w-6  items-center " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                         </motion.svg>}
                                 </button>
@@ -118,7 +119,7 @@ const Navbar = () => {
                                             },
                                         }}
                                         style={{ pointerEvents: isOpen ? "auto" : "auto" }}
-                                        className="py-[5vh] pb-3 h-screen sm:px-3 transition-all ease-in-out duration-1000 z-20 lg:space-y-2 space-y-10" ref={menuRef}>
+                                        className="py-[5vh] pb-3 xl:h-full h-screen sm:px-3 transition-all ease-in-out duration-1000 z-20 lg:space-y-2 space-y-10" ref={menuRef}>
 
                                         {navbar.map((data, index) => {
                                             return (
@@ -130,7 +131,7 @@ const Navbar = () => {
                                                     whileInView={{ y: 0, x: 0, opacity: 1, scale: 1 }}
                                                     transition={{ duration: 0.2, delay: 0.1 * index, easi: [0.33, 1, 0.68, 1] }}
                                                     className={`text-[5vw] text-white hover:bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%] text-center mx-auto hover:tracking-widest scroll-smooth hover:scroll-auto transition-all block px-3 p-2 w-fit bowlby-one-regular
-            ${index === 3 && 'border-2 px-5 border-white text-white'}
+            ${index === 4 && 'border-2 px-5 border-white text-white'}
             `}
                                                 >
                                                     {data.nav}
