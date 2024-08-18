@@ -2,9 +2,13 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className='poppins-semibold '>
+        <div className='poppins-semibold bg-cover'
+            style={{
+                backgroundImage: `url('/Website_Images/67-3d-futuristic-telephone-receiver-hovering-in-the-negative-space-radiant-with-vivid-beams-morphing-.jpeg')`,
+            }}
+        >
             {/* Contact */}
-            <div className="bg-neutral-900 font-sans font-normal xl:text-[1.3vw] ">
+            <div className="font-sans font-normal xl:text-[1.3vw] backdrop-blur-xl">
                 <div className="px-4 xl:px-[10vw] py-10 lg:py-20 mx-auto">
                     {/* Title */}
                     <div className="max-w-3xl mb-10 lg:mb-14">

@@ -73,9 +73,7 @@ const Testimonials = () => {
 
     return (
         <div>
-            <section className='bg-cover  text-white' style={{
-                            backgroundImage: 'url(Website_Images/testimonials.png)'
-                        }}>
+            <section className='bg-cover  text-black' >
                 <ParallaxProvider>
                     <div className="px-8 py-24 mx-auto md:px-12 lg:px-0 backdrop-blur-d overflow-hidden h-screen">
                         <div className="flex flex-col w-full h-full bg-cover"
@@ -83,12 +81,14 @@ const Testimonials = () => {
                         >
                         {/* <img className='object-cover h-scree w-auto aspect-square' src='Website_Images/testimonials.png' /> */}
                             <h2 className='text-center p-5 mb-5 lg:text-[5vw] text-4xl archivo-black-regular '>
-                                Our Client's
-                                <span className='circle-sketch-highlight'>
+                                Our Client's&nbsp;
+                                <span className='bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
                                     Love
                                 </span>
                             </h2>
-                            <div className="xl:flex w-[100%] justify-center" aria-labelledby="carousel-label" role="region" tabIndex={0}>
+                            <div className="border2 border-black shadowlg rounded-xl xl:flex w-[100%] justify-center" aria-labelledby="carousel-label" role="region" tabIndex={0}
+                            
+                            >
 
                                 {/* <div
                                     translateY={['-100', '80']} className="block lg:mt-0 items-center">
@@ -100,16 +100,19 @@ const Testimonials = () => {
                                     </Parallax>
                                 </div> */}
 
-                                <div className='lg:w-[50%] '
+                                <div className='lg:w-[50%] bg-cover'
+                                style={{
+                                    backgroundImage: 'url(Website_Images/a-sleek-and-modern-business-scene-featuring-a-text-MBgRk5IVQ3qH3KtMkzgvsQ-6QK09JowSlecNGWfNGQzBQ.jpeg)'
+                                }}
                                 >
-                                    <Slider {...settings} className=''>
+                                    <Slider {...settings} className='backdrop-blur-md'>
                                         {client.map((testimonial) => (
 
 
                                             <Parallax
                                                 // translateY={['100', '-10']}
                                                 opacity={['2', '0']}
-                                                className=" my-auto backdrop-blur-xl">
+                                                className=" my-auto ">
                                                 <motion.div
                                                     initial={{ x: 200, opacity: 0 }}
                                                     whileInView={{ x: 0, opacity: 1 }}

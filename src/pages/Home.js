@@ -169,7 +169,7 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
-                                                            viewport={{once: true}}
+                                                            viewport={{ once: true }}
                                                             className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
                                                             <span className='archivo-black-regular bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
                                                                 99.95%
@@ -183,7 +183,7 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
-                                                            viewport={{once: true}}
+                                                            viewport={{ once: true }}
                                                             className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
                                                             <span className='archivo-black-regular bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
                                                                 2,000+
@@ -197,7 +197,7 @@ const HorizontalScrollCarousel = () => {
                                                             initial={{ x: 20, opacity: 0 }}
                                                             whileInView={{ x: 0, opacity: 1 }}
                                                             transition={{ duration: 0.5, delay: 0.3 }}
-                                                            viewport={{once: true}}
+                                                            viewport={{ once: true }}
                                                             className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-white  ">
                                                             <span className='archivo-black-regular bg-gradient-to-t from-[#489b9c] from-[50%] to-[20%]'>
                                                                 85%
@@ -215,7 +215,7 @@ const HorizontalScrollCarousel = () => {
                                                 initial={{ y: 40, opacity: 0 }}
                                                 whileInView={{ y: 0, opacity: 1 }}
                                                 transition={{ duration: 0.5, delay: 0.3 }}
-                                                viewport={{once: true}}
+                                                viewport={{ once: true }}
                                                 className="py-3 px-4 inline-flex items-center gap-x-2 xl:text-[1.3vw] font-light border-r-4 border-b-4 border-black bg-[#489b9c] text-white hover:bg-black/50 disabled:opacity-50 disabled:pointer-events-none" href="#contact">
                                                 Get started now
                                                 <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
@@ -371,7 +371,7 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ x: -200, opacity: 0 }}
                                             whileInView={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.9, delay: 0.5 }}
-                                            viewport={{once: true}}
+                                            viewport={{ once: true }}
 
                                             className="lg:w-[30%]">
                                             <Parallax
@@ -406,8 +406,8 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ x: 200, opacity: 0 }}
                                             whileInView={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.9, delay: 0.5 }}
-                                            viewport={{once: true}}
-                                             className="lg:w-[30%]">
+                                            viewport={{ once: true }}
+                                            className="lg:w-[30%]">
                                             <Parallax
                                                 opacity={['1', '0']}
                                                 className="flex h-full">
@@ -434,8 +434,8 @@ const HorizontalScrollCarousel = () => {
                                         <motion.div
                                             initial={{ x: -200, opacity: 0 }}
                                             whileInView={{ x: 0, opacity: 1 }}
-                                            transition={{ duration: 0.9, delay: 0.5 }} 
-                                            viewport={{once: true}}
+                                            transition={{ duration: 0.9, delay: 0.5 }}
+                                            viewport={{ once: true }}
                                             className="lg:w-[30%]">
                                             <Parallax
                                                 opacity={['1', '0']}
@@ -607,7 +607,7 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.1 }}
-                                            viewport={{once: true}}
+                                            viewport={{ once: true }}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
 
@@ -626,7 +626,7 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.2 }}
-                                            viewport={{once: true}}
+                                            viewport={{ once: true }}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
                                             className='-blue-400 lg:h-fit  p-2 rounded-xl'>
@@ -640,7 +640,7 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.3 }}
-                                            viewport={{once: true}}
+                                            viewport={{ once: true }}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
                                             className='-lime-400 lg:h-fit  p-2 rounded-xl'>
@@ -653,7 +653,7 @@ const HorizontalScrollCarousel = () => {
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             transition={{ duration: 0.3, delay: 0.4 }}
-                                            viewport={{once: true}}
+                                            viewport={{ once: true }}
                                             // translateY={['0', '-100']}
                                             // opacity={['1', '0']}
                                             className='-red-400 lg:h-fit p-2 rounded-xl'>
@@ -682,7 +682,8 @@ const HorizontalScrollCarousel = () => {
                     </Parallax>
 
                     {/* <OurWork /> */}
-                    <div className='py-24 lg:px-24 relative overflow-hidden p-5 text-balance font-sans font-semibold'>
+                    <div className='py-24 lg:px-24 relative overflow-hidden p-5 text-balance font-sans font-semibold'
+                    >
                         <OurResults />
                     </div>
 
